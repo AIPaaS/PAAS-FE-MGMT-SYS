@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+    xmlns:dubbox="http://dubbox.aic.com/schema/rest/client"
+    xsi:schemaLocation="
+          http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://code.alibabatech.com/schema/dubbo
+          http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+          http://dubbox.aic.com/schema/rest/client http://dubbox.aic.com/schema/rest/client/dubbox-rest-client.xsd">
+	
+	
+	<bean id="DubboRestClient_SYS" class="com.binary.framework.dubbo.rest.DubboRestClient">
+		<constructor-arg value="${dubbox.rest.root.sys}" />
+	</bean>
+	
+	<dubbox:rest id="DubboxRest_SysFrameSvc" interface="com.aic.paas.frame.cross.rest.SysFrameSvc" client="DubboRestClient_SYS" />
+	<dubbox:rest id="DubboxRest_MerchentSvc" interface="com.aic.paas.frame.cross.rest.MerchentSvc" client="DubboRestClient_SYS" />
+	
+	<dubbox:rest id="DubboxRest_SysCodeSvc" interface="com.aic.paas.sys.rest.SysCodeSvc" client="DubboRestClient_SYS" />
+	<dubbox:rest id="DubboxRest_SysLoginLogSvc" interface="com.aic.paas.sys.rest.SysLoginLogSvc" client="DubboRestClient_SYS" />
+	<dubbox:rest id="DubboxRest_SysMenuSvc" interface="com.aic.paas.sys.rest.SysMenuSvc" client="DubboRestClient_SYS" />
+	<dubbox:rest id="DubboxRest_SysModuRoleSvc" interface="com.aic.paas.sys.rest.SysModuRoleSvc" client="DubboRestClient_SYS" />
+	<dubbox:rest id="DubboxRest_SysModuSvc" interface="com.aic.paas.sys.rest.SysModuSvc" client="DubboRestClient_SYS" />
+	<dubbox:rest id="DubboxRest_SysOpOrgSvc" interface="com.aic.paas.sys.rest.SysOpOrgSvc" client="DubboRestClient_SYS" />
+	<dubbox:rest id="DubboxRest_SysOpRoleSvc" interface="com.aic.paas.sys.rest.SysOpRoleSvc" client="DubboRestClient_SYS" />
+	<dubbox:rest id="DubboxRest_SysOpSvc" interface="com.aic.paas.sys.rest.SysOpSvc" client="DubboRestClient_SYS" />
+	<dubbox:rest id="DubboxRest_SysOrgSvc" interface="com.aic.paas.sys.rest.SysOrgSvc" client="DubboRestClient_SYS" />
+	<dubbox:rest id="DubboxRest_SysRegionSvc" interface="com.aic.paas.sys.rest.SysRegionSvc" client="DubboRestClient_SYS" />
+	<dubbox:rest id="DubboxRest_SysRoleSvc" interface="com.aic.paas.sys.rest.SysRoleSvc" client="DubboRestClient_SYS" />
+	
+	
+		
+</beans>
+
+
+

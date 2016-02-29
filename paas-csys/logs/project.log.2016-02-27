@@ -1,0 +1,1603 @@
+2016-02-27 19:06:31  [ main:0 ] - [ INFO ]  start jetty-server ......
+2016-02-27 19:06:31  [ main:4 ] - [ INFO ]  begin initialization QueuedThreadPool ......
+2016-02-27 19:06:31  [ main:6 ] - [ INFO ]  begin initialization SelectChannelConnector ......
+2016-02-27 19:06:31  [ main:21 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-02-27 19:06:31  [ main:21 ] - [ INFO ]  begin initialization Server ......
+2016-02-27 19:06:31  [ main:31 ] - [ INFO ]  begin initialization WebAppContext ......
+2016-02-27 19:06:31  [ main:31 ] - [ INFO ]   initialization app-root '/paas-sys=src/main/webapp' ...... 
+2016-02-27 19:06:31  [ main:62 ] - [ INFO ]  begin start server ......
+2016-02-27 19:06:31  [ main:62 ] - [ INFO ]  jetty-6.1.26
+2016-02-27 19:06:31  [ main:532 ] - [ INFO ]  Initializing Spring FrameworkServlet 'spring'
+2016-02-27 19:06:31  [ main:533 ] - [ INFO ]  FrameworkServlet 'spring': initialization started
+2016-02-27 19:06:31  [ main:551 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sat Feb 27 19:06:31 CST 2016]; root of context hierarchy
+2016-02-27 19:06:31  [ main:587 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+2016-02-27 19:06:31  [ main:655 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-context.xml]
+2016-02-27 19:06:31  [ main:705 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-dubbo-client.xml]
+2016-02-27 19:06:31  [ main:745 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-sso-client.xml]
+2016-02-27 19:06:31  [ main:759 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-sso-client.xml]
+2016-02-27 19:06:31  [ main:803 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:06:31  [ main:843 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-frame.xml]
+2016-02-27 19:06:31  [ main:863 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:06:31  [ main:918 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-sys.xml]
+2016-02-27 19:06:31  [ main:933 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:06:32  [ main:1078 ] - [ INFO ]  Loading properties file from class path resource [project.properties]
+2016-02-27 19:06:32  [ main:1107 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6dbf2c98: defining beans [viewResolver,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,multipartResolver,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,com.binary.framework.util.FrameworkProperties#0,DubboRestClient_SYS,DubboxRest_SysFrameSvc,DubboxRest_SysCodeSvc,DubboxRest_SysLoginLogSvc,DubboxRest_SysMenuSvc,DubboxRest_SysModuRoleSvc,DubboxRest_SysModuSvc,DubboxRest_SysOpOrgSvc,DubboxRest_SysOpRoleSvc,DubboxRest_SysOpSvc,DubboxRest_SysOrgSvc,DubboxRest_SysRegionSvc,DubboxRest_SysRoleSvc,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.binary.sso.client.auth.SsoClientAuthMvc#0,com.binary.sso.client.SsoClientConfiguration#0,dropListMvc,indexMvc,moduMvc,tmpFileMvc,treeListMvc,com.aic.paas.frame.cross.peer.impl.SysAuthResPeerImpl#0,com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl#0,com.aic.paas.frame.util.SysFrameUtil#0,com.aic.paas.frame.cross.integration.SsoUserLoginListener#0,dispatchMvc,sysCodeMvc,sysMenuMvc,sysModuMvc,sysModuRoleMvc,sysOpMvc,sysOpRoleMvc,sysRoleMvc,com.aic.paas.sys.peer.impl.SysCodePeerImpl#0,com.aic.paas.sys.peer.impl.SysMenuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysOpPeerImpl#0,com.aic.paas.sys.peer.impl.SysOpRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysRegionPeerImpl#0,com.aic.paas.sys.peer.impl.SysRolePeerImpl#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-02-27 19:06:32  [ main:1252 ] - [ INFO ]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6dbf2c98: defining beans [viewResolver,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,multipartResolver,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,com.binary.framework.util.FrameworkProperties#0,DubboRestClient_SYS,DubboxRest_SysFrameSvc,DubboxRest_SysCodeSvc,DubboxRest_SysLoginLogSvc,DubboxRest_SysMenuSvc,DubboxRest_SysModuRoleSvc,DubboxRest_SysModuSvc,DubboxRest_SysOpOrgSvc,DubboxRest_SysOpRoleSvc,DubboxRest_SysOpSvc,DubboxRest_SysOrgSvc,DubboxRest_SysRegionSvc,DubboxRest_SysRoleSvc,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.binary.sso.client.auth.SsoClientAuthMvc#0,com.binary.sso.client.SsoClientConfiguration#0,dropListMvc,indexMvc,moduMvc,tmpFileMvc,treeListMvc,com.aic.paas.frame.cross.peer.impl.SysAuthResPeerImpl#0,com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl#0,com.aic.paas.frame.util.SysFrameUtil#0,com.aic.paas.frame.cross.integration.SsoUserLoginListener#0,dispatchMvc,sysCodeMvc,sysMenuMvc,sysModuMvc,sysModuRoleMvc,sysOpMvc,sysOpRoleMvc,sysRoleMvc,com.aic.paas.sys.peer.impl.SysCodePeerImpl#0,com.aic.paas.sys.peer.impl.SysMenuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysOpPeerImpl#0,com.aic.paas.sys.peer.impl.SysOpRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysRegionPeerImpl#0,com.aic.paas.sys.peer.impl.SysRolePeerImpl#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-02-27 19:06:32  [ main:1254 ] - [ ERROR ]  Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.binary.sso.client.auth.SsoClientAuthMvc#0' defined in class path resource [spring/spring-sso-client.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'com.naomi.ebdp.sys.frame.cross.integration.SsoUserLoginListener' is defined
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:527)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:605)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:472)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
+	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:440)
+	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:263)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:736)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:140)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at com.binary.application.jetty.JettyServer.start(JettyServer.java:281)
+	at com.binary.application.jetty.JettyMain.main(JettyMain.java:12)
+	at com.aic.paas.sys.test.TestSysMain.main(TestSysMain.java:10)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'com.naomi.ebdp.sys.frame.cross.integration.SsoUserLoginListener' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:549)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:277)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at com.binary.sso.client.auth.SsoClientAuthMvc.setApplicationContext(SsoClientAuthMvc.java:95)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:117)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:92)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:394)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1448)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	... 32 more
+2016-02-27 19:06:32  [ main:1257 ] - [ ERROR ]  unavailable
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.binary.sso.client.auth.SsoClientAuthMvc#0' defined in class path resource [spring/spring-sso-client.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'com.naomi.ebdp.sys.frame.cross.integration.SsoUserLoginListener' is defined
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:527)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:605)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:472)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
+	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:440)
+	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:263)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:736)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:140)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at com.binary.application.jetty.JettyServer.start(JettyServer.java:281)
+	at com.binary.application.jetty.JettyMain.main(JettyMain.java:12)
+	at com.aic.paas.sys.test.TestSysMain.main(TestSysMain.java:10)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'com.naomi.ebdp.sys.frame.cross.integration.SsoUserLoginListener' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:549)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:277)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at com.binary.sso.client.auth.SsoClientAuthMvc.setApplicationContext(SsoClientAuthMvc.java:95)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:117)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:92)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:394)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1448)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	... 32 more
+2016-02-27 19:06:32  [ main:1288 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:16101
+2016-02-27 19:06:32  [ main:1288 ] - [ INFO ]  start server successful.
+2016-02-27 19:07:40  [ main:0 ] - [ INFO ]  start jetty-server ......
+2016-02-27 19:07:40  [ main:4 ] - [ INFO ]  begin initialization QueuedThreadPool ......
+2016-02-27 19:07:40  [ main:7 ] - [ INFO ]  begin initialization SelectChannelConnector ......
+2016-02-27 19:07:40  [ main:24 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-02-27 19:07:40  [ main:24 ] - [ INFO ]  begin initialization Server ......
+2016-02-27 19:07:40  [ main:34 ] - [ INFO ]  begin initialization WebAppContext ......
+2016-02-27 19:07:40  [ main:34 ] - [ INFO ]   initialization app-root '/paas-sys=src/main/webapp' ...... 
+2016-02-27 19:07:40  [ main:64 ] - [ INFO ]  begin start server ......
+2016-02-27 19:07:40  [ main:65 ] - [ INFO ]  jetty-6.1.26
+2016-02-27 19:07:41  [ main:529 ] - [ INFO ]  Initializing Spring FrameworkServlet 'spring'
+2016-02-27 19:07:41  [ main:529 ] - [ INFO ]  FrameworkServlet 'spring': initialization started
+2016-02-27 19:07:41  [ main:558 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sat Feb 27 19:07:41 CST 2016]; root of context hierarchy
+2016-02-27 19:07:41  [ main:597 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+2016-02-27 19:07:41  [ main:663 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-context.xml]
+2016-02-27 19:07:41  [ main:712 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-dubbo-client.xml]
+2016-02-27 19:07:41  [ main:752 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-sso-client.xml]
+2016-02-27 19:07:41  [ main:767 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-sso-client.xml]
+2016-02-27 19:07:41  [ main:802 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:07:41  [ main:841 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-frame.xml]
+2016-02-27 19:07:41  [ main:861 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:07:41  [ main:911 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-sys.xml]
+2016-02-27 19:07:41  [ main:927 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:07:41  [ main:1072 ] - [ INFO ]  Loading properties file from class path resource [project.properties]
+2016-02-27 19:07:41  [ main:1101 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5b8174f8: defining beans [viewResolver,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,multipartResolver,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,com.binary.framework.util.FrameworkProperties#0,DubboRestClient_SYS,DubboxRest_SysFrameSvc,DubboxRest_SysCodeSvc,DubboxRest_SysLoginLogSvc,DubboxRest_SysMenuSvc,DubboxRest_SysModuRoleSvc,DubboxRest_SysModuSvc,DubboxRest_SysOpOrgSvc,DubboxRest_SysOpRoleSvc,DubboxRest_SysOpSvc,DubboxRest_SysOrgSvc,DubboxRest_SysRegionSvc,DubboxRest_SysRoleSvc,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.binary.sso.client.auth.SsoClientAuthMvc#0,com.binary.sso.client.SsoClientConfiguration#0,dropListMvc,indexMvc,moduMvc,tmpFileMvc,treeListMvc,com.aic.paas.frame.cross.peer.impl.SysAuthResPeerImpl#0,com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl#0,com.aic.paas.frame.util.SysFrameUtil#0,com.aic.paas.frame.cross.integration.SsoUserLoginListener#0,dispatchMvc,sysCodeMvc,sysMenuMvc,sysModuMvc,sysModuRoleMvc,sysOpMvc,sysOpRoleMvc,sysRoleMvc,com.aic.paas.sys.peer.impl.SysCodePeerImpl#0,com.aic.paas.sys.peer.impl.SysMenuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysOpPeerImpl#0,com.aic.paas.sys.peer.impl.SysOpRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysRegionPeerImpl#0,com.aic.paas.sys.peer.impl.SysRolePeerImpl#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-02-27 19:07:43  [ main:3457 ] - [ INFO ]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5b8174f8: defining beans [viewResolver,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,multipartResolver,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,com.binary.framework.util.FrameworkProperties#0,DubboRestClient_SYS,DubboxRest_SysFrameSvc,DubboxRest_SysCodeSvc,DubboxRest_SysLoginLogSvc,DubboxRest_SysMenuSvc,DubboxRest_SysModuRoleSvc,DubboxRest_SysModuSvc,DubboxRest_SysOpOrgSvc,DubboxRest_SysOpRoleSvc,DubboxRest_SysOpSvc,DubboxRest_SysOrgSvc,DubboxRest_SysRegionSvc,DubboxRest_SysRoleSvc,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.binary.sso.client.auth.SsoClientAuthMvc#0,com.binary.sso.client.SsoClientConfiguration#0,dropListMvc,indexMvc,moduMvc,tmpFileMvc,treeListMvc,com.aic.paas.frame.cross.peer.impl.SysAuthResPeerImpl#0,com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl#0,com.aic.paas.frame.util.SysFrameUtil#0,com.aic.paas.frame.cross.integration.SsoUserLoginListener#0,dispatchMvc,sysCodeMvc,sysMenuMvc,sysModuMvc,sysModuRoleMvc,sysOpMvc,sysOpRoleMvc,sysRoleMvc,com.aic.paas.sys.peer.impl.SysCodePeerImpl#0,com.aic.paas.sys.peer.impl.SysMenuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysOpPeerImpl#0,com.aic.paas.sys.peer.impl.SysOpRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysRegionPeerImpl#0,com.aic.paas.sys.peer.impl.SysRolePeerImpl#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-02-27 19:07:43  [ main:3463 ] - [ ERROR ]  Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dispatchMvc' defined in file [E:\workspace\asiainfo\paas\paas-csys\target\classes\com\aic\paas\sys\mvc\DispatchMvc.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.aic.paas.sys.mvc.DispatchMvc]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.naomi cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:997)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:943)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:605)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:472)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
+	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:440)
+	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:263)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:736)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:140)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at com.binary.application.jetty.JettyServer.start(JettyServer.java:281)
+	at com.binary.application.jetty.JettyMain.main(JettyMain.java:12)
+	at com.aic.paas.sys.test.TestSysMain.main(TestSysMain.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.aic.paas.sys.mvc.DispatchMvc]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.naomi cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:162)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:990)
+	... 34 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.naomi cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+
+	at com.aic.paas.sys.mvc.DispatchMvc.<init>(DispatchMvc.java:9)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	... 36 more
+2016-02-27 19:07:43  [ main:3473 ] - [ ERROR ]  unavailable
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dispatchMvc' defined in file [E:\workspace\asiainfo\paas\paas-csys\target\classes\com\aic\paas\sys\mvc\DispatchMvc.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.aic.paas.sys.mvc.DispatchMvc]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.naomi cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:997)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:943)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:605)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:472)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
+	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:440)
+	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:263)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:736)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:140)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at com.binary.application.jetty.JettyServer.start(JettyServer.java:281)
+	at com.binary.application.jetty.JettyMain.main(JettyMain.java:12)
+	at com.aic.paas.sys.test.TestSysMain.main(TestSysMain.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.aic.paas.sys.mvc.DispatchMvc]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.naomi cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:162)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:990)
+	... 34 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.naomi cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+	SysFrameUtil cannot be resolved
+
+	at com.aic.paas.sys.mvc.DispatchMvc.<init>(DispatchMvc.java:9)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	... 36 more
+2016-02-27 19:07:44  [ main:3529 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:16101
+2016-02-27 19:07:44  [ main:3529 ] - [ INFO ]  start server successful.
+2016-02-27 19:08:37  [ main:0 ] - [ INFO ]  start jetty-server ......
+2016-02-27 19:08:37  [ main:4 ] - [ INFO ]  begin initialization QueuedThreadPool ......
+2016-02-27 19:08:37  [ main:7 ] - [ INFO ]  begin initialization SelectChannelConnector ......
+2016-02-27 19:08:37  [ main:22 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-02-27 19:08:37  [ main:23 ] - [ INFO ]  begin initialization Server ......
+2016-02-27 19:08:37  [ main:32 ] - [ INFO ]  begin initialization WebAppContext ......
+2016-02-27 19:08:37  [ main:32 ] - [ INFO ]   initialization app-root '/paas-sys=src/main/webapp' ...... 
+2016-02-27 19:08:37  [ main:62 ] - [ INFO ]  begin start server ......
+2016-02-27 19:08:37  [ main:62 ] - [ INFO ]  jetty-6.1.26
+2016-02-27 19:08:38  [ main:534 ] - [ INFO ]  Initializing Spring FrameworkServlet 'spring'
+2016-02-27 19:08:38  [ main:534 ] - [ INFO ]  FrameworkServlet 'spring': initialization started
+2016-02-27 19:08:38  [ main:553 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sat Feb 27 19:08:38 CST 2016]; root of context hierarchy
+2016-02-27 19:08:38  [ main:589 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+2016-02-27 19:08:38  [ main:652 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-context.xml]
+2016-02-27 19:08:38  [ main:704 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-dubbo-client.xml]
+2016-02-27 19:08:38  [ main:743 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-sso-client.xml]
+2016-02-27 19:08:38  [ main:757 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-sso-client.xml]
+2016-02-27 19:08:38  [ main:795 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:08:38  [ main:842 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-frame.xml]
+2016-02-27 19:08:38  [ main:862 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:08:38  [ main:910 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-sys.xml]
+2016-02-27 19:08:38  [ main:927 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:08:38  [ main:1082 ] - [ INFO ]  Loading properties file from class path resource [project.properties]
+2016-02-27 19:08:38  [ main:1113 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6a3f870b: defining beans [viewResolver,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,multipartResolver,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,com.binary.framework.util.FrameworkProperties#0,DubboRestClient_SYS,DubboxRest_SysFrameSvc,DubboxRest_SysCodeSvc,DubboxRest_SysLoginLogSvc,DubboxRest_SysMenuSvc,DubboxRest_SysModuRoleSvc,DubboxRest_SysModuSvc,DubboxRest_SysOpOrgSvc,DubboxRest_SysOpRoleSvc,DubboxRest_SysOpSvc,DubboxRest_SysOrgSvc,DubboxRest_SysRegionSvc,DubboxRest_SysRoleSvc,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.binary.sso.client.auth.SsoClientAuthMvc#0,com.binary.sso.client.SsoClientConfiguration#0,dropListMvc,indexMvc,moduMvc,tmpFileMvc,treeListMvc,com.aic.paas.frame.cross.peer.impl.SysAuthResPeerImpl#0,com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl#0,com.aic.paas.frame.util.SysFrameUtil#0,com.aic.paas.frame.cross.integration.SsoUserLoginListener#0,dispatchMvc,sysCodeMvc,sysMenuMvc,sysModuMvc,sysModuRoleMvc,sysOpMvc,sysOpRoleMvc,sysRoleMvc,com.aic.paas.sys.peer.impl.SysCodePeerImpl#0,com.aic.paas.sys.peer.impl.SysMenuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysOpPeerImpl#0,com.aic.paas.sys.peer.impl.SysOpRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysRegionPeerImpl#0,com.aic.paas.sys.peer.impl.SysRolePeerImpl#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-02-27 19:08:39  [ main:1386 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:08:39  [ main:1387 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:08:39  [ main:1387 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:08:39  [ main:1387 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:08:39  [ main:1388 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:08:39  [ main:1388 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:08:39  [ main:1388 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:08:39  [ main:1389 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:08:39  [ main:1389 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:08:39  [ main:1390 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch] onto handler 'dropListMvc'
+2016-02-27 19:08:39  [ main:1391 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch.*] onto handler 'dropListMvc'
+2016-02-27 19:08:39  [ main:1391 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch/] onto handler 'dropListMvc'
+2016-02-27 19:08:39  [ main:1391 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle] onto handler 'dropListMvc'
+2016-02-27 19:08:39  [ main:1392 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle.*] onto handler 'dropListMvc'
+2016-02-27 19:08:39  [ main:1392 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle/] onto handler 'dropListMvc'
+2016-02-27 19:08:39  [ main:1392 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList] onto handler 'dropListMvc'
+2016-02-27 19:08:39  [ main:1393 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList.*] onto handler 'dropListMvc'
+2016-02-27 19:08:39  [ main:1393 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList/] onto handler 'dropListMvc'
+2016-02-27 19:08:39  [ main:1394 ] - [ INFO ]  Root mapping to handler 'indexMvc'
+2016-02-27 19:08:39  [ main:1395 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById] onto handler 'moduMvc'
+2016-02-27 19:08:39  [ main:1395 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById.*] onto handler 'moduMvc'
+2016-02-27 19:08:39  [ main:1395 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById/] onto handler 'moduMvc'
+2016-02-27 19:08:39  [ main:1396 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode] onto handler 'moduMvc'
+2016-02-27 19:08:39  [ main:1396 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode.*] onto handler 'moduMvc'
+2016-02-27 19:08:39  [ main:1396 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode/] onto handler 'moduMvc'
+2016-02-27 19:08:39  [ main:1397 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree] onto handler 'moduMvc'
+2016-02-27 19:08:39  [ main:1397 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree.*] onto handler 'moduMvc'
+2016-02-27 19:08:39  [ main:1397 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree/] onto handler 'moduMvc'
+2016-02-27 19:08:39  [ main:1398 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload] onto handler 'tmpFileMvc'
+2016-02-27 19:08:39  [ main:1398 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload.*] onto handler 'tmpFileMvc'
+2016-02-27 19:08:39  [ main:1398 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload/] onto handler 'tmpFileMvc'
+2016-02-27 19:08:39  [ main:1400 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeList] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1401 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeList.*] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1401 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeList/] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1401 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeForm] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1401 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeForm.*] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1402 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeForm/] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1402 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysModuList] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1402 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysModuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1403 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysModuList/] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1403 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuList] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1403 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1403 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuList/] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1404 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1404 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1404 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1404 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1405 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1405 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1405 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1415 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1415 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1415 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysModuRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1416 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysModuRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1416 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysModuRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1416 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpList] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1416 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpList.*] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1417 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpList/] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1417 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpList] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1417 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpList.*] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1417 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpList/] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1418 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpForm] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1418 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpForm.*] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1418 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpForm/] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1419 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysMenuList] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1419 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysMenuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1419 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysMenuList/] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1419 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleForm] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1420 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleForm.*] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1420 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleForm/] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1420 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1420 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1421 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1421 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1421 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1421 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1422 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebMenuList] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1422 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebMenuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1422 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebMenuList/] onto handler 'dispatchMvc'
+2016-02-27 19:08:39  [ main:1423 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeExpList] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1423 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeExpList.*] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1424 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeExpList/] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1424 ] - [ INFO ]  Mapped URL path [/base/syscode/querySysCodeInfo] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1424 ] - [ INFO ]  Mapped URL path [/base/syscode/querySysCodeInfo.*] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1424 ] - [ INFO ]  Mapped URL path [/base/syscode/querySysCodeInfo/] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1425 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeList] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1425 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeList.*] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1425 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeList/] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1425 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefPage] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1426 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefPage.*] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1426 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefPage/] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1426 ] - [ INFO ]  Mapped URL path [/base/syscode/saveOrUpdate] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1427 ] - [ INFO ]  Mapped URL path [/base/syscode/saveOrUpdate.*] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1427 ] - [ INFO ]  Mapped URL path [/base/syscode/saveOrUpdate/] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1427 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefById] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1427 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefById.*] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1428 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefById/] onto handler 'sysCodeMvc'
+2016-02-27 19:08:39  [ main:1428 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuTree] onto handler 'sysMenuMvc'
+2016-02-27 19:08:39  [ main:1428 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuTree.*] onto handler 'sysMenuMvc'
+2016-02-27 19:08:39  [ main:1429 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuTree/] onto handler 'sysMenuMvc'
+2016-02-27 19:08:39  [ main:1429 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuById] onto handler 'sysMenuMvc'
+2016-02-27 19:08:39  [ main:1429 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuById.*] onto handler 'sysMenuMvc'
+2016-02-27 19:08:39  [ main:1430 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuById/] onto handler 'sysMenuMvc'
+2016-02-27 19:08:39  [ main:1430 ] - [ INFO ]  Mapped URL path [/base/sysmenu/saveOrUpdate] onto handler 'sysMenuMvc'
+2016-02-27 19:08:39  [ main:1430 ] - [ INFO ]  Mapped URL path [/base/sysmenu/saveOrUpdate.*] onto handler 'sysMenuMvc'
+2016-02-27 19:08:39  [ main:1430 ] - [ INFO ]  Mapped URL path [/base/sysmenu/saveOrUpdate/] onto handler 'sysMenuMvc'
+2016-02-27 19:08:39  [ main:1431 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuTree] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1432 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuTree.*] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1432 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuTree/] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1432 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuById] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1432 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuById.*] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1433 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuById/] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1433 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuDrop] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1433 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuDrop.*] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1433 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuDrop/] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1434 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuResByModuId] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1434 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuResByModuId.*] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1434 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuResByModuId/] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1434 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuDropByModuId] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1435 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuDropByModuId.*] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1435 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuDropByModuId/] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1435 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuRes] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1436 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuRes.*] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1436 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuRes/] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1436 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveOrUpdate] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1436 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveOrUpdate.*] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1437 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveOrUpdate/] onto handler 'sysModuMvc'
+2016-02-27 19:08:39  [ main:1438 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysModuTree] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1438 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysModuTree.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1438 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysModuTree/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1438 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysRolePage] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1439 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysRolePage.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1439 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysRolePage/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1439 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModus] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1439 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModus.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1440 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModus/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1440 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimit] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1440 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimit.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1441 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimit/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1441 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimits] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1441 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimits.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1441 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimits/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1442 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModu] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1442 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModu.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1442 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModu/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:08:39  [ main:1443 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpPage] onto handler 'sysOpMvc'
+2016-02-27 19:08:39  [ main:1443 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpPage.*] onto handler 'sysOpMvc'
+2016-02-27 19:08:39  [ main:1443 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpPage/] onto handler 'sysOpMvc'
+2016-02-27 19:08:39  [ main:1444 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpById] onto handler 'sysOpMvc'
+2016-02-27 19:08:39  [ main:1444 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpById.*] onto handler 'sysOpMvc'
+2016-02-27 19:08:39  [ main:1444 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpById/] onto handler 'sysOpMvc'
+2016-02-27 19:08:39  [ main:1444 ] - [ INFO ]  Mapped URL path [/permis/sysop/saveOrUpdate] onto handler 'sysOpMvc'
+2016-02-27 19:08:39  [ main:1444 ] - [ INFO ]  Mapped URL path [/permis/sysop/saveOrUpdate.*] onto handler 'sysOpMvc'
+2016-02-27 19:08:39  [ main:1445 ] - [ INFO ]  Mapped URL path [/permis/sysop/saveOrUpdate/] onto handler 'sysOpMvc'
+2016-02-27 19:08:39  [ main:1445 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/queryOpRolePage] onto handler 'sysOpRoleMvc'
+2016-02-27 19:08:39  [ main:1446 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/queryOpRolePage.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:08:39  [ main:1446 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/queryOpRolePage/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:08:39  [ main:1446 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/addOpRoles] onto handler 'sysOpRoleMvc'
+2016-02-27 19:08:39  [ main:1446 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/addOpRoles.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:08:39  [ main:1447 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/addOpRoles/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:08:39  [ main:1447 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/removeOpRoles] onto handler 'sysOpRoleMvc'
+2016-02-27 19:08:39  [ main:1447 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/removeOpRoles.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:08:39  [ main:1447 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/removeOpRoles/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:08:39  [ main:1448 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/setMasterRole] onto handler 'sysOpRoleMvc'
+2016-02-27 19:08:39  [ main:1448 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/setMasterRole.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:08:39  [ main:1448 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/setMasterRole/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:08:39  [ main:1449 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRoleById] onto handler 'sysRoleMvc'
+2016-02-27 19:08:39  [ main:1449 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRoleById.*] onto handler 'sysRoleMvc'
+2016-02-27 19:08:39  [ main:1449 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRoleById/] onto handler 'sysRoleMvc'
+2016-02-27 19:08:39  [ main:1449 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRolePage] onto handler 'sysRoleMvc'
+2016-02-27 19:08:39  [ main:1450 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRolePage.*] onto handler 'sysRoleMvc'
+2016-02-27 19:08:39  [ main:1450 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRolePage/] onto handler 'sysRoleMvc'
+2016-02-27 19:08:39  [ main:1450 ] - [ INFO ]  Mapped URL path [/permis/sysrole/saveOrUpdate] onto handler 'sysRoleMvc'
+2016-02-27 19:08:39  [ main:1450 ] - [ INFO ]  Mapped URL path [/permis/sysrole/saveOrUpdate.*] onto handler 'sysRoleMvc'
+2016-02-27 19:08:39  [ main:1451 ] - [ INFO ]  Mapped URL path [/permis/sysrole/saveOrUpdate/] onto handler 'sysRoleMvc'
+2016-02-27 19:08:39  [ main:1565 ] - [ INFO ]  FrameworkServlet 'spring': initialization completed in 1031 ms
+2016-02-27 19:08:39  [ main:1587 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:16101
+2016-02-27 19:08:39  [ main:1587 ] - [ INFO ]  start server successful.
+2016-02-27 19:09:21  [ main:0 ] - [ INFO ]  start jetty-server ......
+2016-02-27 19:09:21  [ main:3 ] - [ INFO ]  begin initialization QueuedThreadPool ......
+2016-02-27 19:09:21  [ main:6 ] - [ INFO ]  begin initialization SelectChannelConnector ......
+2016-02-27 19:09:21  [ main:22 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-02-27 19:09:21  [ main:23 ] - [ INFO ]  begin initialization Server ......
+2016-02-27 19:09:21  [ main:32 ] - [ INFO ]  begin initialization WebAppContext ......
+2016-02-27 19:09:21  [ main:32 ] - [ INFO ]   initialization app-root '/paas-csys=src/main/webapp' ...... 
+2016-02-27 19:09:21  [ main:62 ] - [ INFO ]  begin start server ......
+2016-02-27 19:09:21  [ main:62 ] - [ INFO ]  jetty-6.1.26
+2016-02-27 19:09:22  [ main:516 ] - [ INFO ]  Initializing Spring FrameworkServlet 'spring'
+2016-02-27 19:09:22  [ main:517 ] - [ INFO ]  FrameworkServlet 'spring': initialization started
+2016-02-27 19:09:22  [ main:534 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sat Feb 27 19:09:22 CST 2016]; root of context hierarchy
+2016-02-27 19:09:22  [ main:570 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+2016-02-27 19:09:22  [ main:634 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-context.xml]
+2016-02-27 19:09:22  [ main:681 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-dubbo-client.xml]
+2016-02-27 19:09:22  [ main:720 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-sso-client.xml]
+2016-02-27 19:09:22  [ main:737 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-sso-client.xml]
+2016-02-27 19:09:22  [ main:779 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:09:22  [ main:821 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-frame.xml]
+2016-02-27 19:09:22  [ main:845 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:09:22  [ main:909 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-sys.xml]
+2016-02-27 19:09:22  [ main:926 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:09:22  [ main:1074 ] - [ INFO ]  Loading properties file from class path resource [project.properties]
+2016-02-27 19:09:22  [ main:1104 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5b8174f8: defining beans [viewResolver,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,multipartResolver,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,com.binary.framework.util.FrameworkProperties#0,DubboRestClient_SYS,DubboxRest_SysFrameSvc,DubboxRest_SysCodeSvc,DubboxRest_SysLoginLogSvc,DubboxRest_SysMenuSvc,DubboxRest_SysModuRoleSvc,DubboxRest_SysModuSvc,DubboxRest_SysOpOrgSvc,DubboxRest_SysOpRoleSvc,DubboxRest_SysOpSvc,DubboxRest_SysOrgSvc,DubboxRest_SysRegionSvc,DubboxRest_SysRoleSvc,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.binary.sso.client.auth.SsoClientAuthMvc#0,com.binary.sso.client.SsoClientConfiguration#0,dropListMvc,indexMvc,moduMvc,tmpFileMvc,treeListMvc,com.aic.paas.frame.cross.peer.impl.SysAuthResPeerImpl#0,com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl#0,com.aic.paas.frame.util.SysFrameUtil#0,com.aic.paas.frame.cross.integration.SsoUserLoginListener#0,dispatchMvc,sysCodeMvc,sysMenuMvc,sysModuMvc,sysModuRoleMvc,sysOpMvc,sysOpRoleMvc,sysRoleMvc,com.aic.paas.sys.peer.impl.SysCodePeerImpl#0,com.aic.paas.sys.peer.impl.SysMenuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysOpPeerImpl#0,com.aic.paas.sys.peer.impl.SysOpRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysRegionPeerImpl#0,com.aic.paas.sys.peer.impl.SysRolePeerImpl#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-02-27 19:09:22  [ main:1407 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:22  [ main:1407 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:22  [ main:1408 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:22  [ main:1408 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:22  [ main:1408 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:22  [ main:1409 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:22  [ main:1409 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:22  [ main:1409 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:22  [ main:1410 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:22  [ main:1412 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle] onto handler 'dropListMvc'
+2016-02-27 19:09:22  [ main:1413 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle.*] onto handler 'dropListMvc'
+2016-02-27 19:09:22  [ main:1413 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle/] onto handler 'dropListMvc'
+2016-02-27 19:09:22  [ main:1414 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch] onto handler 'dropListMvc'
+2016-02-27 19:09:22  [ main:1414 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch.*] onto handler 'dropListMvc'
+2016-02-27 19:09:22  [ main:1415 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch/] onto handler 'dropListMvc'
+2016-02-27 19:09:22  [ main:1415 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList] onto handler 'dropListMvc'
+2016-02-27 19:09:22  [ main:1416 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList.*] onto handler 'dropListMvc'
+2016-02-27 19:09:22  [ main:1416 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList/] onto handler 'dropListMvc'
+2016-02-27 19:09:22  [ main:1417 ] - [ INFO ]  Root mapping to handler 'indexMvc'
+2016-02-27 19:09:22  [ main:1418 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode] onto handler 'moduMvc'
+2016-02-27 19:09:22  [ main:1418 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode.*] onto handler 'moduMvc'
+2016-02-27 19:09:22  [ main:1419 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode/] onto handler 'moduMvc'
+2016-02-27 19:09:22  [ main:1419 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById] onto handler 'moduMvc'
+2016-02-27 19:09:22  [ main:1420 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById.*] onto handler 'moduMvc'
+2016-02-27 19:09:22  [ main:1420 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById/] onto handler 'moduMvc'
+2016-02-27 19:09:22  [ main:1421 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree] onto handler 'moduMvc'
+2016-02-27 19:09:22  [ main:1421 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree.*] onto handler 'moduMvc'
+2016-02-27 19:09:22  [ main:1422 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree/] onto handler 'moduMvc'
+2016-02-27 19:09:22  [ main:1422 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload] onto handler 'tmpFileMvc'
+2016-02-27 19:09:22  [ main:1423 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload.*] onto handler 'tmpFileMvc'
+2016-02-27 19:09:22  [ main:1423 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload/] onto handler 'tmpFileMvc'
+2016-02-27 19:09:22  [ main:1425 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeList] onto handler 'dispatchMvc'
+2016-02-27 19:09:22  [ main:1425 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1426 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1426 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeForm] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1426 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeForm.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1427 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeForm/] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1427 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebMenuList] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1428 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebMenuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1428 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebMenuList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1428 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysMenuList] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1429 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysMenuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1429 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysMenuList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1429 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpForm] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1430 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpForm.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1430 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpForm/] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1430 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1431 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1431 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1431 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1432 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1440 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1441 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysModuRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1441 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysModuRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1442 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysModuRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1442 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysModuList] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1443 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysModuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1443 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysModuList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1444 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpList] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1444 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1444 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1445 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1445 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1446 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1446 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpList] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1447 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1447 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1448 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuList] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1448 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1448 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1449 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1449 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1450 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1450 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleForm] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1451 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleForm.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1451 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleForm/] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1451 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1452 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1452 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:23  [ main:1453 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeExpList] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1454 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeExpList.*] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1454 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeExpList/] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1455 ] - [ INFO ]  Mapped URL path [/base/syscode/querySysCodeInfo] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1455 ] - [ INFO ]  Mapped URL path [/base/syscode/querySysCodeInfo.*] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1455 ] - [ INFO ]  Mapped URL path [/base/syscode/querySysCodeInfo/] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1456 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeList] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1456 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeList.*] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1456 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeList/] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1457 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefPage] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1457 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefPage.*] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1458 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefPage/] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1458 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefById] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1458 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefById.*] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1458 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefById/] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1459 ] - [ INFO ]  Mapped URL path [/base/syscode/saveOrUpdate] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1459 ] - [ INFO ]  Mapped URL path [/base/syscode/saveOrUpdate.*] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1459 ] - [ INFO ]  Mapped URL path [/base/syscode/saveOrUpdate/] onto handler 'sysCodeMvc'
+2016-02-27 19:09:23  [ main:1460 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuTree] onto handler 'sysMenuMvc'
+2016-02-27 19:09:23  [ main:1460 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuTree.*] onto handler 'sysMenuMvc'
+2016-02-27 19:09:23  [ main:1461 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuTree/] onto handler 'sysMenuMvc'
+2016-02-27 19:09:23  [ main:1461 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuById] onto handler 'sysMenuMvc'
+2016-02-27 19:09:23  [ main:1461 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuById.*] onto handler 'sysMenuMvc'
+2016-02-27 19:09:23  [ main:1461 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuById/] onto handler 'sysMenuMvc'
+2016-02-27 19:09:23  [ main:1462 ] - [ INFO ]  Mapped URL path [/base/sysmenu/saveOrUpdate] onto handler 'sysMenuMvc'
+2016-02-27 19:09:23  [ main:1462 ] - [ INFO ]  Mapped URL path [/base/sysmenu/saveOrUpdate.*] onto handler 'sysMenuMvc'
+2016-02-27 19:09:23  [ main:1462 ] - [ INFO ]  Mapped URL path [/base/sysmenu/saveOrUpdate/] onto handler 'sysMenuMvc'
+2016-02-27 19:09:23  [ main:1463 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuTree] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1464 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuTree.*] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1464 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuTree/] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1465 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuRes] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1465 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuRes.*] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1465 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuRes/] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1465 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuById] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1466 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuById.*] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1466 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuById/] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1466 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuResByModuId] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1467 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuResByModuId.*] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1467 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuResByModuId/] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1467 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuDropByModuId] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1467 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuDropByModuId.*] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1468 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuDropByModuId/] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1468 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuDrop] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1468 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuDrop.*] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1469 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuDrop/] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1469 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveOrUpdate] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1469 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveOrUpdate.*] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1469 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveOrUpdate/] onto handler 'sysModuMvc'
+2016-02-27 19:09:23  [ main:1470 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysModuTree] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1471 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysModuTree.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1471 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysModuTree/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1471 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysRolePage] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1471 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysRolePage.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1472 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysRolePage/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1472 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimit] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1472 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimit.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1472 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimit/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1473 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimits] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1473 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimits.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1473 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimits/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1474 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModu] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1474 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModu.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1474 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModu/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1474 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModus] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1475 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModus.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1475 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModus/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:23  [ main:1475 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpPage] onto handler 'sysOpMvc'
+2016-02-27 19:09:23  [ main:1476 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpPage.*] onto handler 'sysOpMvc'
+2016-02-27 19:09:23  [ main:1476 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpPage/] onto handler 'sysOpMvc'
+2016-02-27 19:09:23  [ main:1476 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpById] onto handler 'sysOpMvc'
+2016-02-27 19:09:23  [ main:1476 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpById.*] onto handler 'sysOpMvc'
+2016-02-27 19:09:23  [ main:1477 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpById/] onto handler 'sysOpMvc'
+2016-02-27 19:09:23  [ main:1477 ] - [ INFO ]  Mapped URL path [/permis/sysop/saveOrUpdate] onto handler 'sysOpMvc'
+2016-02-27 19:09:23  [ main:1477 ] - [ INFO ]  Mapped URL path [/permis/sysop/saveOrUpdate.*] onto handler 'sysOpMvc'
+2016-02-27 19:09:23  [ main:1477 ] - [ INFO ]  Mapped URL path [/permis/sysop/saveOrUpdate/] onto handler 'sysOpMvc'
+2016-02-27 19:09:23  [ main:1478 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/queryOpRolePage] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:23  [ main:1478 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/queryOpRolePage.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:23  [ main:1479 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/queryOpRolePage/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:23  [ main:1479 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/addOpRoles] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:23  [ main:1479 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/addOpRoles.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:23  [ main:1479 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/addOpRoles/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:23  [ main:1480 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/removeOpRoles] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:23  [ main:1480 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/removeOpRoles.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:23  [ main:1480 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/removeOpRoles/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:23  [ main:1480 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/setMasterRole] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:23  [ main:1480 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/setMasterRole.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:23  [ main:1481 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/setMasterRole/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:23  [ main:1481 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRolePage] onto handler 'sysRoleMvc'
+2016-02-27 19:09:23  [ main:1482 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRolePage.*] onto handler 'sysRoleMvc'
+2016-02-27 19:09:23  [ main:1482 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRolePage/] onto handler 'sysRoleMvc'
+2016-02-27 19:09:23  [ main:1482 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRoleById] onto handler 'sysRoleMvc'
+2016-02-27 19:09:23  [ main:1482 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRoleById.*] onto handler 'sysRoleMvc'
+2016-02-27 19:09:23  [ main:1483 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRoleById/] onto handler 'sysRoleMvc'
+2016-02-27 19:09:23  [ main:1483 ] - [ INFO ]  Mapped URL path [/permis/sysrole/saveOrUpdate] onto handler 'sysRoleMvc'
+2016-02-27 19:09:23  [ main:1483 ] - [ INFO ]  Mapped URL path [/permis/sysrole/saveOrUpdate.*] onto handler 'sysRoleMvc'
+2016-02-27 19:09:23  [ main:1483 ] - [ INFO ]  Mapped URL path [/permis/sysrole/saveOrUpdate/] onto handler 'sysRoleMvc'
+2016-02-27 19:09:23  [ main:1589 ] - [ INFO ]  FrameworkServlet 'spring': initialization completed in 1072 ms
+2016-02-27 19:09:23  [ main:1611 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:16101
+2016-02-27 19:09:23  [ main:1612 ] - [ INFO ]  start server successful.
+2016-02-27 19:09:33  [ main:0 ] - [ INFO ]  start jetty-server ......
+2016-02-27 19:09:33  [ main:4 ] - [ INFO ]  begin initialization QueuedThreadPool ......
+2016-02-27 19:09:33  [ main:7 ] - [ INFO ]  begin initialization SelectChannelConnector ......
+2016-02-27 19:09:33  [ main:22 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-02-27 19:09:33  [ main:23 ] - [ INFO ]  begin initialization Server ......
+2016-02-27 19:09:33  [ main:32 ] - [ INFO ]  begin initialization WebAppContext ......
+2016-02-27 19:09:33  [ main:32 ] - [ INFO ]   initialization app-root '/paas-csys=src/main/webapp' ...... 
+2016-02-27 19:09:33  [ main:63 ] - [ INFO ]  begin start server ......
+2016-02-27 19:09:33  [ main:63 ] - [ INFO ]  jetty-6.1.26
+2016-02-27 19:09:33  [ main:542 ] - [ INFO ]  Initializing Spring FrameworkServlet 'spring'
+2016-02-27 19:09:33  [ main:542 ] - [ INFO ]  FrameworkServlet 'spring': initialization started
+2016-02-27 19:09:33  [ main:561 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sat Feb 27 19:09:33 CST 2016]; root of context hierarchy
+2016-02-27 19:09:33  [ main:597 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+2016-02-27 19:09:33  [ main:660 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-context.xml]
+2016-02-27 19:09:33  [ main:710 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-dubbo-client.xml]
+2016-02-27 19:09:33  [ main:751 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-sso-client.xml]
+2016-02-27 19:09:33  [ main:765 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-sso-client.xml]
+2016-02-27 19:09:33  [ main:802 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:09:33  [ main:844 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-frame.xml]
+2016-02-27 19:09:33  [ main:869 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:09:33  [ main:918 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-sys.xml]
+2016-02-27 19:09:33  [ main:933 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:09:34  [ main:1082 ] - [ INFO ]  Loading properties file from class path resource [project.properties]
+2016-02-27 19:09:34  [ main:1111 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@37b9f7e8: defining beans [viewResolver,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,multipartResolver,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,com.binary.framework.util.FrameworkProperties#0,DubboRestClient_SYS,DubboxRest_SysFrameSvc,DubboxRest_SysCodeSvc,DubboxRest_SysLoginLogSvc,DubboxRest_SysMenuSvc,DubboxRest_SysModuRoleSvc,DubboxRest_SysModuSvc,DubboxRest_SysOpOrgSvc,DubboxRest_SysOpRoleSvc,DubboxRest_SysOpSvc,DubboxRest_SysOrgSvc,DubboxRest_SysRegionSvc,DubboxRest_SysRoleSvc,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.binary.sso.client.auth.SsoClientAuthMvc#0,com.binary.sso.client.SsoClientConfiguration#0,dropListMvc,indexMvc,moduMvc,tmpFileMvc,treeListMvc,com.aic.paas.frame.cross.peer.impl.SysAuthResPeerImpl#0,com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl#0,com.aic.paas.frame.util.SysFrameUtil#0,com.aic.paas.frame.cross.integration.SsoUserLoginListener#0,dispatchMvc,sysCodeMvc,sysMenuMvc,sysModuMvc,sysModuRoleMvc,sysOpMvc,sysOpRoleMvc,sysRoleMvc,com.aic.paas.sys.peer.impl.SysCodePeerImpl#0,com.aic.paas.sys.peer.impl.SysMenuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysOpPeerImpl#0,com.aic.paas.sys.peer.impl.SysOpRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysRegionPeerImpl#0,com.aic.paas.sys.peer.impl.SysRolePeerImpl#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-02-27 19:09:34  [ main:1383 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:34  [ main:1384 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:34  [ main:1384 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:34  [ main:1384 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:34  [ main:1385 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:34  [ main:1385 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:34  [ main:1385 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:34  [ main:1386 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:34  [ main:1386 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:09:34  [ main:1388 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList] onto handler 'dropListMvc'
+2016-02-27 19:09:34  [ main:1388 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList.*] onto handler 'dropListMvc'
+2016-02-27 19:09:34  [ main:1388 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList/] onto handler 'dropListMvc'
+2016-02-27 19:09:34  [ main:1389 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle] onto handler 'dropListMvc'
+2016-02-27 19:09:34  [ main:1389 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle.*] onto handler 'dropListMvc'
+2016-02-27 19:09:34  [ main:1389 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle/] onto handler 'dropListMvc'
+2016-02-27 19:09:34  [ main:1389 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch] onto handler 'dropListMvc'
+2016-02-27 19:09:34  [ main:1390 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch.*] onto handler 'dropListMvc'
+2016-02-27 19:09:34  [ main:1390 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch/] onto handler 'dropListMvc'
+2016-02-27 19:09:34  [ main:1391 ] - [ INFO ]  Root mapping to handler 'indexMvc'
+2016-02-27 19:09:34  [ main:1391 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree] onto handler 'moduMvc'
+2016-02-27 19:09:34  [ main:1392 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree.*] onto handler 'moduMvc'
+2016-02-27 19:09:34  [ main:1392 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree/] onto handler 'moduMvc'
+2016-02-27 19:09:34  [ main:1392 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode] onto handler 'moduMvc'
+2016-02-27 19:09:34  [ main:1393 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode.*] onto handler 'moduMvc'
+2016-02-27 19:09:34  [ main:1393 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode/] onto handler 'moduMvc'
+2016-02-27 19:09:34  [ main:1393 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById] onto handler 'moduMvc'
+2016-02-27 19:09:34  [ main:1394 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById.*] onto handler 'moduMvc'
+2016-02-27 19:09:34  [ main:1394 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById/] onto handler 'moduMvc'
+2016-02-27 19:09:34  [ main:1395 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload] onto handler 'tmpFileMvc'
+2016-02-27 19:09:34  [ main:1395 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload.*] onto handler 'tmpFileMvc'
+2016-02-27 19:09:34  [ main:1395 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload/] onto handler 'tmpFileMvc'
+2016-02-27 19:09:34  [ main:1397 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeForm] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1397 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeForm.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1398 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeForm/] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1398 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysMenuList] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1398 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysMenuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1399 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysMenuList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1399 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysModuList] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1399 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysModuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1400 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysModuList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1400 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1400 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1401 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1401 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleForm] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1401 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleForm.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1401 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleForm/] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1402 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpList] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1402 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1402 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1403 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeList] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1411 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1412 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1412 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpForm] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1413 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpForm.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1413 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpForm/] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1413 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysModuRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1413 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysModuRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1414 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysModuRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1414 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpList] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1414 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1415 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1415 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebMenuList] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1415 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebMenuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1415 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebMenuList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1416 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1416 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1416 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1417 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuList] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1417 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1417 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1417 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1418 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1418 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1418 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1418 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1419 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1419 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1419 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1420 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:09:34  [ main:1421 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefById] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1421 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefById.*] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1421 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefById/] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1422 ] - [ INFO ]  Mapped URL path [/base/syscode/saveOrUpdate] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1422 ] - [ INFO ]  Mapped URL path [/base/syscode/saveOrUpdate.*] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1422 ] - [ INFO ]  Mapped URL path [/base/syscode/saveOrUpdate/] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1422 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeList] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1423 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeList.*] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1423 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeList/] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1423 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefPage] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1424 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefPage.*] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1424 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefPage/] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1424 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeExpList] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1424 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeExpList.*] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1425 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeExpList/] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1425 ] - [ INFO ]  Mapped URL path [/base/syscode/querySysCodeInfo] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1425 ] - [ INFO ]  Mapped URL path [/base/syscode/querySysCodeInfo.*] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1425 ] - [ INFO ]  Mapped URL path [/base/syscode/querySysCodeInfo/] onto handler 'sysCodeMvc'
+2016-02-27 19:09:34  [ main:1426 ] - [ INFO ]  Mapped URL path [/base/sysmenu/saveOrUpdate] onto handler 'sysMenuMvc'
+2016-02-27 19:09:34  [ main:1426 ] - [ INFO ]  Mapped URL path [/base/sysmenu/saveOrUpdate.*] onto handler 'sysMenuMvc'
+2016-02-27 19:09:34  [ main:1427 ] - [ INFO ]  Mapped URL path [/base/sysmenu/saveOrUpdate/] onto handler 'sysMenuMvc'
+2016-02-27 19:09:34  [ main:1427 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuTree] onto handler 'sysMenuMvc'
+2016-02-27 19:09:34  [ main:1427 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuTree.*] onto handler 'sysMenuMvc'
+2016-02-27 19:09:34  [ main:1427 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuTree/] onto handler 'sysMenuMvc'
+2016-02-27 19:09:34  [ main:1428 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuById] onto handler 'sysMenuMvc'
+2016-02-27 19:09:34  [ main:1428 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuById.*] onto handler 'sysMenuMvc'
+2016-02-27 19:09:34  [ main:1428 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuById/] onto handler 'sysMenuMvc'
+2016-02-27 19:09:34  [ main:1429 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveOrUpdate] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1430 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveOrUpdate.*] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1430 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveOrUpdate/] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1430 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuDrop] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1430 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuDrop.*] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1431 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuDrop/] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1431 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuTree] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1431 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuTree.*] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1432 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuTree/] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1432 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuById] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1432 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuById.*] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1432 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuById/] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1433 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuDropByModuId] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1433 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuDropByModuId.*] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1433 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuDropByModuId/] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1433 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuRes] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1434 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuRes.*] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1434 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuRes/] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1434 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuResByModuId] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1434 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuResByModuId.*] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1435 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuResByModuId/] onto handler 'sysModuMvc'
+2016-02-27 19:09:34  [ main:1436 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimits] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1436 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimits.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1436 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimits/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1436 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModu] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1437 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModu.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1437 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModu/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1437 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimit] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1437 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimit.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1438 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimit/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1438 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysRolePage] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1438 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysRolePage.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1438 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysRolePage/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1439 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysModuTree] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1439 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysModuTree.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1439 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysModuTree/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1439 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModus] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1440 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModus.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1440 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModus/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:09:34  [ main:1441 ] - [ INFO ]  Mapped URL path [/permis/sysop/saveOrUpdate] onto handler 'sysOpMvc'
+2016-02-27 19:09:34  [ main:1441 ] - [ INFO ]  Mapped URL path [/permis/sysop/saveOrUpdate.*] onto handler 'sysOpMvc'
+2016-02-27 19:09:34  [ main:1441 ] - [ INFO ]  Mapped URL path [/permis/sysop/saveOrUpdate/] onto handler 'sysOpMvc'
+2016-02-27 19:09:34  [ main:1441 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpPage] onto handler 'sysOpMvc'
+2016-02-27 19:09:34  [ main:1442 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpPage.*] onto handler 'sysOpMvc'
+2016-02-27 19:09:34  [ main:1442 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpPage/] onto handler 'sysOpMvc'
+2016-02-27 19:09:34  [ main:1442 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpById] onto handler 'sysOpMvc'
+2016-02-27 19:09:34  [ main:1442 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpById.*] onto handler 'sysOpMvc'
+2016-02-27 19:09:34  [ main:1443 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpById/] onto handler 'sysOpMvc'
+2016-02-27 19:09:34  [ main:1443 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/queryOpRolePage] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:34  [ main:1444 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/queryOpRolePage.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:34  [ main:1444 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/queryOpRolePage/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:34  [ main:1444 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/addOpRoles] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:34  [ main:1444 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/addOpRoles.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:34  [ main:1445 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/addOpRoles/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:34  [ main:1445 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/removeOpRoles] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:34  [ main:1445 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/removeOpRoles.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:34  [ main:1445 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/removeOpRoles/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:34  [ main:1446 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/setMasterRole] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:34  [ main:1446 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/setMasterRole.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:34  [ main:1446 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/setMasterRole/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:09:34  [ main:1447 ] - [ INFO ]  Mapped URL path [/permis/sysrole/saveOrUpdate] onto handler 'sysRoleMvc'
+2016-02-27 19:09:34  [ main:1447 ] - [ INFO ]  Mapped URL path [/permis/sysrole/saveOrUpdate.*] onto handler 'sysRoleMvc'
+2016-02-27 19:09:34  [ main:1447 ] - [ INFO ]  Mapped URL path [/permis/sysrole/saveOrUpdate/] onto handler 'sysRoleMvc'
+2016-02-27 19:09:34  [ main:1447 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRolePage] onto handler 'sysRoleMvc'
+2016-02-27 19:09:34  [ main:1448 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRolePage.*] onto handler 'sysRoleMvc'
+2016-02-27 19:09:34  [ main:1448 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRolePage/] onto handler 'sysRoleMvc'
+2016-02-27 19:09:34  [ main:1448 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRoleById] onto handler 'sysRoleMvc'
+2016-02-27 19:09:34  [ main:1448 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRoleById.*] onto handler 'sysRoleMvc'
+2016-02-27 19:09:34  [ main:1449 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRoleById/] onto handler 'sysRoleMvc'
+2016-02-27 19:09:34  [ main:1565 ] - [ INFO ]  FrameworkServlet 'spring': initialization completed in 1022 ms
+2016-02-27 19:09:34  [ main:1597 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:16101
+2016-02-27 19:09:34  [ main:1597 ] - [ INFO ]  start server successful.
+2016-02-27 19:10:26  [ main:0 ] - [ INFO ]  start jetty-server ......
+2016-02-27 19:10:26  [ main:4 ] - [ INFO ]  begin initialization QueuedThreadPool ......
+2016-02-27 19:10:26  [ main:7 ] - [ INFO ]  begin initialization SelectChannelConnector ......
+2016-02-27 19:10:26  [ main:22 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-02-27 19:10:26  [ main:23 ] - [ INFO ]  begin initialization Server ......
+2016-02-27 19:10:26  [ main:33 ] - [ INFO ]  begin initialization WebAppContext ......
+2016-02-27 19:10:26  [ main:33 ] - [ INFO ]   initialization app-root '/paas-csys=src/main/webapp' ...... 
+2016-02-27 19:10:26  [ main:62 ] - [ INFO ]  begin start server ......
+2016-02-27 19:10:26  [ main:63 ] - [ INFO ]  jetty-6.1.26
+2016-02-27 19:10:27  [ main:522 ] - [ INFO ]  Initializing Spring FrameworkServlet 'spring'
+2016-02-27 19:10:27  [ main:523 ] - [ INFO ]  FrameworkServlet 'spring': initialization started
+2016-02-27 19:10:27  [ main:541 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sat Feb 27 19:10:27 CST 2016]; root of context hierarchy
+2016-02-27 19:10:27  [ main:577 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+2016-02-27 19:10:27  [ main:640 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-context.xml]
+2016-02-27 19:10:27  [ main:689 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-dubbo-client.xml]
+2016-02-27 19:10:27  [ main:728 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-sso-client.xml]
+2016-02-27 19:10:27  [ main:742 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-sso-client.xml]
+2016-02-27 19:10:27  [ main:778 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:10:27  [ main:813 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-frame.xml]
+2016-02-27 19:10:27  [ main:837 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:10:27  [ main:887 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-sys.xml]
+2016-02-27 19:10:27  [ main:902 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:10:27  [ main:1047 ] - [ INFO ]  Loading properties file from class path resource [project.properties]
+2016-02-27 19:10:27  [ main:1076 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1242bced: defining beans [viewResolver,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,multipartResolver,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,com.binary.framework.util.FrameworkProperties#0,DubboRestClient_SYS,DubboxRest_SysFrameSvc,DubboxRest_SysCodeSvc,DubboxRest_SysLoginLogSvc,DubboxRest_SysMenuSvc,DubboxRest_SysModuRoleSvc,DubboxRest_SysModuSvc,DubboxRest_SysOpOrgSvc,DubboxRest_SysOpRoleSvc,DubboxRest_SysOpSvc,DubboxRest_SysOrgSvc,DubboxRest_SysRegionSvc,DubboxRest_SysRoleSvc,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.binary.sso.client.auth.SsoClientAuthMvc#0,com.binary.sso.client.SsoClientConfiguration#0,dropListMvc,indexMvc,moduMvc,tmpFileMvc,treeListMvc,com.aic.paas.frame.cross.peer.impl.SysAuthResPeerImpl#0,com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl#0,com.aic.paas.frame.util.SysFrameUtil#0,com.aic.paas.frame.cross.integration.SsoUserLoginListener#0,dispatchMvc,sysCodeMvc,sysMenuMvc,sysModuMvc,sysModuRoleMvc,sysOpMvc,sysOpRoleMvc,sysRoleMvc,com.aic.paas.sys.peer.impl.SysCodePeerImpl#0,com.aic.paas.sys.peer.impl.SysMenuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysOpPeerImpl#0,com.aic.paas.sys.peer.impl.SysOpRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysRegionPeerImpl#0,com.aic.paas.sys.peer.impl.SysRolePeerImpl#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-02-27 19:10:27  [ main:1334 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:10:27  [ main:1335 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:10:27  [ main:1335 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:10:27  [ main:1335 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:10:27  [ main:1336 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:10:27  [ main:1336 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:10:27  [ main:1337 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:10:27  [ main:1337 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:10:27  [ main:1338 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:10:27  [ main:1340 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle] onto handler 'dropListMvc'
+2016-02-27 19:10:27  [ main:1341 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle.*] onto handler 'dropListMvc'
+2016-02-27 19:10:27  [ main:1341 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle/] onto handler 'dropListMvc'
+2016-02-27 19:10:27  [ main:1342 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch] onto handler 'dropListMvc'
+2016-02-27 19:10:27  [ main:1342 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch.*] onto handler 'dropListMvc'
+2016-02-27 19:10:27  [ main:1343 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch/] onto handler 'dropListMvc'
+2016-02-27 19:10:27  [ main:1343 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList] onto handler 'dropListMvc'
+2016-02-27 19:10:27  [ main:1344 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList.*] onto handler 'dropListMvc'
+2016-02-27 19:10:27  [ main:1344 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList/] onto handler 'dropListMvc'
+2016-02-27 19:10:27  [ main:1345 ] - [ INFO ]  Root mapping to handler 'indexMvc'
+2016-02-27 19:10:27  [ main:1346 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode] onto handler 'moduMvc'
+2016-02-27 19:10:27  [ main:1346 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode.*] onto handler 'moduMvc'
+2016-02-27 19:10:27  [ main:1347 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode/] onto handler 'moduMvc'
+2016-02-27 19:10:27  [ main:1347 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById] onto handler 'moduMvc'
+2016-02-27 19:10:27  [ main:1348 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById.*] onto handler 'moduMvc'
+2016-02-27 19:10:27  [ main:1348 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById/] onto handler 'moduMvc'
+2016-02-27 19:10:27  [ main:1349 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree] onto handler 'moduMvc'
+2016-02-27 19:10:27  [ main:1349 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree.*] onto handler 'moduMvc'
+2016-02-27 19:10:27  [ main:1350 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree/] onto handler 'moduMvc'
+2016-02-27 19:10:27  [ main:1351 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload] onto handler 'tmpFileMvc'
+2016-02-27 19:10:27  [ main:1351 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload.*] onto handler 'tmpFileMvc'
+2016-02-27 19:10:27  [ main:1351 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload/] onto handler 'tmpFileMvc'
+2016-02-27 19:10:27  [ main:1354 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeList] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1355 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeList.*] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1355 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeList/] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1355 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeForm] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1356 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeForm.*] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1356 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeForm/] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1356 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysModuList] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1357 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysModuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1357 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysModuList/] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1357 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpList] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1357 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpList.*] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1358 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpList/] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1358 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebMenuList] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1358 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebMenuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1359 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebMenuList/] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1359 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleForm] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1359 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleForm.*] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1359 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleForm/] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1360 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpForm] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1368 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpForm.*] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1369 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpForm/] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1369 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1369 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1370 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1370 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysMenuList] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1370 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysMenuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1371 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysMenuList/] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1371 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpList] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1371 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpList.*] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1371 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpList/] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1372 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1372 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1372 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1373 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1373 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1373 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1373 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1374 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1374 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1374 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysModuRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1375 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysModuRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1375 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysModuRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1375 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuList] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1375 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1376 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuList/] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1376 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1376 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1376 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:10:27  [ main:1377 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeExpList] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1378 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeExpList.*] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1378 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeExpList/] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1378 ] - [ INFO ]  Mapped URL path [/base/syscode/querySysCodeInfo] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1378 ] - [ INFO ]  Mapped URL path [/base/syscode/querySysCodeInfo.*] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1379 ] - [ INFO ]  Mapped URL path [/base/syscode/querySysCodeInfo/] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1379 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefPage] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1379 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefPage.*] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1379 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefPage/] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1380 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeList] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1380 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeList.*] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1380 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeList/] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1380 ] - [ INFO ]  Mapped URL path [/base/syscode/saveOrUpdate] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1381 ] - [ INFO ]  Mapped URL path [/base/syscode/saveOrUpdate.*] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1381 ] - [ INFO ]  Mapped URL path [/base/syscode/saveOrUpdate/] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1381 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefById] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1381 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefById.*] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1382 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefById/] onto handler 'sysCodeMvc'
+2016-02-27 19:10:27  [ main:1382 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuTree] onto handler 'sysMenuMvc'
+2016-02-27 19:10:27  [ main:1382 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuTree.*] onto handler 'sysMenuMvc'
+2016-02-27 19:10:27  [ main:1383 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuTree/] onto handler 'sysMenuMvc'
+2016-02-27 19:10:27  [ main:1383 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuById] onto handler 'sysMenuMvc'
+2016-02-27 19:10:27  [ main:1383 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuById.*] onto handler 'sysMenuMvc'
+2016-02-27 19:10:27  [ main:1383 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuById/] onto handler 'sysMenuMvc'
+2016-02-27 19:10:27  [ main:1384 ] - [ INFO ]  Mapped URL path [/base/sysmenu/saveOrUpdate] onto handler 'sysMenuMvc'
+2016-02-27 19:10:27  [ main:1384 ] - [ INFO ]  Mapped URL path [/base/sysmenu/saveOrUpdate.*] onto handler 'sysMenuMvc'
+2016-02-27 19:10:27  [ main:1384 ] - [ INFO ]  Mapped URL path [/base/sysmenu/saveOrUpdate/] onto handler 'sysMenuMvc'
+2016-02-27 19:10:27  [ main:1385 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuTree] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1385 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuTree.*] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1386 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuTree/] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1386 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuDrop] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1386 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuDrop.*] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1386 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuDrop/] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1387 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuById] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1387 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuById.*] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1387 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuById/] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1387 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuRes] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1388 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuRes.*] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1388 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuRes/] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1388 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuDropByModuId] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1388 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuDropByModuId.*] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1389 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuDropByModuId/] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1389 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuResByModuId] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1389 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuResByModuId.*] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1389 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuResByModuId/] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1390 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveOrUpdate] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1390 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveOrUpdate.*] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1390 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveOrUpdate/] onto handler 'sysModuMvc'
+2016-02-27 19:10:27  [ main:1391 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModu] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1391 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModu.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1392 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModu/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1392 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimit] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1392 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimit.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1392 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimit/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1393 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimits] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1393 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimits.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1393 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimits/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1393 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysModuTree] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1394 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysModuTree.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1394 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysModuTree/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1394 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysRolePage] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1394 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysRolePage.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1395 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysRolePage/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1395 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModus] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1395 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModus.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1395 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModus/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:10:27  [ main:1396 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpPage] onto handler 'sysOpMvc'
+2016-02-27 19:10:27  [ main:1396 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpPage.*] onto handler 'sysOpMvc'
+2016-02-27 19:10:27  [ main:1397 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpPage/] onto handler 'sysOpMvc'
+2016-02-27 19:10:27  [ main:1397 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpById] onto handler 'sysOpMvc'
+2016-02-27 19:10:27  [ main:1397 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpById.*] onto handler 'sysOpMvc'
+2016-02-27 19:10:27  [ main:1397 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpById/] onto handler 'sysOpMvc'
+2016-02-27 19:10:27  [ main:1397 ] - [ INFO ]  Mapped URL path [/permis/sysop/saveOrUpdate] onto handler 'sysOpMvc'
+2016-02-27 19:10:27  [ main:1398 ] - [ INFO ]  Mapped URL path [/permis/sysop/saveOrUpdate.*] onto handler 'sysOpMvc'
+2016-02-27 19:10:27  [ main:1398 ] - [ INFO ]  Mapped URL path [/permis/sysop/saveOrUpdate/] onto handler 'sysOpMvc'
+2016-02-27 19:10:27  [ main:1399 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/queryOpRolePage] onto handler 'sysOpRoleMvc'
+2016-02-27 19:10:27  [ main:1399 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/queryOpRolePage.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:10:27  [ main:1399 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/queryOpRolePage/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:10:27  [ main:1399 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/removeOpRoles] onto handler 'sysOpRoleMvc'
+2016-02-27 19:10:27  [ main:1400 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/removeOpRoles.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:10:27  [ main:1400 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/removeOpRoles/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:10:27  [ main:1400 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/addOpRoles] onto handler 'sysOpRoleMvc'
+2016-02-27 19:10:27  [ main:1401 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/addOpRoles.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:10:27  [ main:1401 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/addOpRoles/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:10:27  [ main:1401 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/setMasterRole] onto handler 'sysOpRoleMvc'
+2016-02-27 19:10:27  [ main:1401 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/setMasterRole.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:10:27  [ main:1402 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/setMasterRole/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:10:27  [ main:1402 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRoleById] onto handler 'sysRoleMvc'
+2016-02-27 19:10:27  [ main:1402 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRoleById.*] onto handler 'sysRoleMvc'
+2016-02-27 19:10:27  [ main:1403 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRoleById/] onto handler 'sysRoleMvc'
+2016-02-27 19:10:27  [ main:1403 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRolePage] onto handler 'sysRoleMvc'
+2016-02-27 19:10:27  [ main:1403 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRolePage.*] onto handler 'sysRoleMvc'
+2016-02-27 19:10:27  [ main:1403 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRolePage/] onto handler 'sysRoleMvc'
+2016-02-27 19:10:27  [ main:1404 ] - [ INFO ]  Mapped URL path [/permis/sysrole/saveOrUpdate] onto handler 'sysRoleMvc'
+2016-02-27 19:10:27  [ main:1404 ] - [ INFO ]  Mapped URL path [/permis/sysrole/saveOrUpdate.*] onto handler 'sysRoleMvc'
+2016-02-27 19:10:27  [ main:1404 ] - [ INFO ]  Mapped URL path [/permis/sysrole/saveOrUpdate/] onto handler 'sysRoleMvc'
+2016-02-27 19:10:28  [ main:1511 ] - [ INFO ]  FrameworkServlet 'spring': initialization completed in 988 ms
+2016-02-27 19:10:28  [ main:1532 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:16101
+2016-02-27 19:10:28  [ main:1532 ] - [ INFO ]  start server successful.
+2016-02-27 19:10:38  [ 1437393913@qtp-337297605-7:11865 ] - [ INFO ]   sys-frame refresh login ...... 
+2016-02-27 19:10:38  [ 1437393913@qtp-337297605-7:11865 ] - [ INFO ]   sys-frame refresh login successful. 
+2016-02-27 19:10:46  [ 1437393913@qtp-337297605-7:19698 ] - [ ERROR ]   mvc process error! 
+java.lang.ClassCastException: java.util.HashMap cannot be cast to com.aic.paas.frame.cross.bean.SysCode
+	at com.aic.paas.frame.util.ComponentUtil.toDropList(ComponentUtil.java:254)
+	at com.aic.paas.frame.util.ComponentUtil.getDropListBatch(ComponentUtil.java:282)
+	at com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl.toModuInfo(SysFramePeerImpl.java:308)
+	at com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl.forwardModule(SysFramePeerImpl.java:263)
+	at com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl.forwardModuleByCode(SysFramePeerImpl.java:226)
+	at com.aic.paas.frame.util.SysFrameUtil.forwardModuleByCode(SysFrameUtil.java:155)
+	at com.aic.paas.sys.mvc.DispatchMvc.forward2SysOpList(DispatchMvc.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:436)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:424)
+	at com.binary.framework.spring.BinarySpringServlet.doDispatch(BinarySpringServlet.java:222)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1221)
+	at com.binary.framework.web.filter.LoginValidateFilter.doFilter(LoginValidateFilter.java:216)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+	at com.binary.framework.web.filter.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:28)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:399)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+2016-02-27 19:12:32  [ 1437393913@qtp-337297605-7:125432 ] - [ ERROR ]   mvc process error! 
+java.lang.ClassCastException: java.util.HashMap cannot be cast to com.aic.paas.frame.cross.bean.SysCode
+	at com.aic.paas.frame.util.ComponentUtil.toDropList(ComponentUtil.java:254)
+	at com.aic.paas.frame.util.ComponentUtil.getDropListBatch(ComponentUtil.java:282)
+	at com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl.toModuInfo(SysFramePeerImpl.java:308)
+	at com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl.forwardModule(SysFramePeerImpl.java:263)
+	at com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl.forwardModuleByCode(SysFramePeerImpl.java:226)
+	at com.aic.paas.frame.util.SysFrameUtil.forwardModuleByCode(SysFrameUtil.java:155)
+	at com.aic.paas.sys.mvc.DispatchMvc.forward2SysOpList(DispatchMvc.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:436)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:424)
+	at com.binary.framework.spring.BinarySpringServlet.doDispatch(BinarySpringServlet.java:222)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1221)
+	at com.binary.framework.web.filter.LoginValidateFilter.doFilter(LoginValidateFilter.java:216)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+	at com.binary.framework.web.filter.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:28)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:399)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+2016-02-27 19:12:52  [ 1437393913@qtp-337297605-7:146375 ] - [ ERROR ]   mvc process error! 
+java.lang.ClassCastException: java.util.HashMap cannot be cast to com.aic.paas.frame.cross.bean.SysCode
+	at com.aic.paas.frame.util.ComponentUtil.toDropList(ComponentUtil.java:254)
+	at com.aic.paas.frame.util.ComponentUtil.getDropListBatch(ComponentUtil.java:282)
+	at com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl.toModuInfo(SysFramePeerImpl.java:308)
+	at com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl.forwardModule(SysFramePeerImpl.java:263)
+	at com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl.forwardModuleByCode(SysFramePeerImpl.java:226)
+	at com.aic.paas.frame.util.SysFrameUtil.forwardModuleByCode(SysFrameUtil.java:155)
+	at com.aic.paas.sys.mvc.DispatchMvc.forward2SysOpList(DispatchMvc.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:436)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:424)
+	at com.binary.framework.spring.BinarySpringServlet.doDispatch(BinarySpringServlet.java:222)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1221)
+	at com.binary.framework.web.filter.LoginValidateFilter.doFilter(LoginValidateFilter.java:216)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+	at com.binary.framework.web.filter.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:28)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:399)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+2016-02-27 19:24:34  [ main:0 ] - [ INFO ]  start jetty-server ......
+2016-02-27 19:24:34  [ main:4 ] - [ INFO ]  begin initialization QueuedThreadPool ......
+2016-02-27 19:24:34  [ main:6 ] - [ INFO ]  begin initialization SelectChannelConnector ......
+2016-02-27 19:24:34  [ main:22 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-02-27 19:24:34  [ main:22 ] - [ INFO ]  begin initialization Server ......
+2016-02-27 19:24:34  [ main:31 ] - [ INFO ]  begin initialization WebAppContext ......
+2016-02-27 19:24:34  [ main:31 ] - [ INFO ]   initialization app-root '/paas-csys=src/main/webapp' ...... 
+2016-02-27 19:24:34  [ main:61 ] - [ INFO ]  begin start server ......
+2016-02-27 19:24:34  [ main:61 ] - [ INFO ]  jetty-6.1.26
+2016-02-27 19:24:34  [ main:564 ] - [ INFO ]  Initializing Spring FrameworkServlet 'spring'
+2016-02-27 19:24:34  [ main:564 ] - [ INFO ]  FrameworkServlet 'spring': initialization started
+2016-02-27 19:24:34  [ main:583 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sat Feb 27 19:24:34 CST 2016]; root of context hierarchy
+2016-02-27 19:24:34  [ main:619 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+2016-02-27 19:24:34  [ main:683 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-context.xml]
+2016-02-27 19:24:34  [ main:731 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-dubbo-client.xml]
+2016-02-27 19:24:35  [ main:772 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-sso-client.xml]
+2016-02-27 19:24:35  [ main:787 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-sso-client.xml]
+2016-02-27 19:24:35  [ main:824 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:24:35  [ main:859 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-frame.xml]
+2016-02-27 19:24:35  [ main:883 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:24:35  [ main:938 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-sys.xml]
+2016-02-27 19:24:35  [ main:955 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-27 19:24:35  [ main:1108 ] - [ INFO ]  Loading properties file from class path resource [project.properties]
+2016-02-27 19:24:35  [ main:1138 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2f4a5255: defining beans [viewResolver,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,multipartResolver,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,com.binary.framework.util.FrameworkProperties#0,DubboRestClient_SYS,DubboxRest_SysFrameSvc,DubboxRest_SysCodeSvc,DubboxRest_SysLoginLogSvc,DubboxRest_SysMenuSvc,DubboxRest_SysModuRoleSvc,DubboxRest_SysModuSvc,DubboxRest_SysOpOrgSvc,DubboxRest_SysOpRoleSvc,DubboxRest_SysOpSvc,DubboxRest_SysOrgSvc,DubboxRest_SysRegionSvc,DubboxRest_SysRoleSvc,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.binary.sso.client.auth.SsoClientAuthMvc#0,com.binary.sso.client.SsoClientConfiguration#0,dropListMvc,indexMvc,moduMvc,tmpFileMvc,treeListMvc,com.aic.paas.frame.cross.peer.impl.SysAuthResPeerImpl#0,com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl#0,com.aic.paas.frame.util.SysFrameUtil#0,com.aic.paas.frame.cross.integration.SsoUserLoginListener#0,dispatchMvc,sysCodeMvc,sysMenuMvc,sysModuMvc,sysModuRoleMvc,sysOpMvc,sysOpRoleMvc,sysRoleMvc,com.aic.paas.sys.peer.impl.SysCodePeerImpl#0,com.aic.paas.sys.peer.impl.SysMenuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuPeerImpl#0,com.aic.paas.sys.peer.impl.SysModuRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysOpPeerImpl#0,com.aic.paas.sys.peer.impl.SysOpRolePeerImpl#0,com.aic.paas.sys.peer.impl.SysRegionPeerImpl#0,com.aic.paas.sys.peer.impl.SysRolePeerImpl#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-02-27 19:24:35  [ main:1425 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:24:35  [ main:1425 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:24:35  [ main:1426 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:24:35  [ main:1426 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:24:35  [ main:1426 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:24:35  [ main:1427 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:24:35  [ main:1427 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:24:35  [ main:1427 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:24:35  [ main:1428 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-27 19:24:35  [ main:1430 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle] onto handler 'dropListMvc'
+2016-02-27 19:24:35  [ main:1431 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle.*] onto handler 'dropListMvc'
+2016-02-27 19:24:35  [ main:1431 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle/] onto handler 'dropListMvc'
+2016-02-27 19:24:35  [ main:1432 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch] onto handler 'dropListMvc'
+2016-02-27 19:24:35  [ main:1433 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch.*] onto handler 'dropListMvc'
+2016-02-27 19:24:35  [ main:1433 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch/] onto handler 'dropListMvc'
+2016-02-27 19:24:35  [ main:1434 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList] onto handler 'dropListMvc'
+2016-02-27 19:24:35  [ main:1435 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList.*] onto handler 'dropListMvc'
+2016-02-27 19:24:35  [ main:1435 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList/] onto handler 'dropListMvc'
+2016-02-27 19:24:35  [ main:1436 ] - [ INFO ]  Root mapping to handler 'indexMvc'
+2016-02-27 19:24:35  [ main:1437 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode] onto handler 'moduMvc'
+2016-02-27 19:24:35  [ main:1438 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode.*] onto handler 'moduMvc'
+2016-02-27 19:24:35  [ main:1438 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode/] onto handler 'moduMvc'
+2016-02-27 19:24:35  [ main:1439 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById] onto handler 'moduMvc'
+2016-02-27 19:24:35  [ main:1439 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById.*] onto handler 'moduMvc'
+2016-02-27 19:24:35  [ main:1440 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById/] onto handler 'moduMvc'
+2016-02-27 19:24:35  [ main:1440 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree] onto handler 'moduMvc'
+2016-02-27 19:24:35  [ main:1441 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree.*] onto handler 'moduMvc'
+2016-02-27 19:24:35  [ main:1441 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree/] onto handler 'moduMvc'
+2016-02-27 19:24:35  [ main:1441 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload] onto handler 'tmpFileMvc'
+2016-02-27 19:24:35  [ main:1442 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload.*] onto handler 'tmpFileMvc'
+2016-02-27 19:24:35  [ main:1442 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload/] onto handler 'tmpFileMvc'
+2016-02-27 19:24:35  [ main:1444 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeForm] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1444 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeForm.*] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1445 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeForm/] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1445 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysMenuList] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1445 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysMenuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1446 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysMenuList/] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1446 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeList] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1446 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeList.*] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1447 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysCodeList/] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1447 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysModuList] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1447 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysModuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1448 ] - [ INFO ]  Mapped URL path [/dispatch/base/SysModuList/] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1448 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysModuRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1448 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysModuRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1449 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysModuRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1449 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1449 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1449 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1450 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1458 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1458 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1458 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1459 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1459 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1459 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpForm] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1460 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpForm.*] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1460 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpForm/] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1460 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpList] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1460 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpList.*] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1461 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebOpList/] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1461 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1461 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1461 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1462 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleForm] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1462 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleForm.*] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1462 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleForm/] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1463 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuList] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1463 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1463 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebModuList/] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1463 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleList] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1464 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleList.*] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1464 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysRoleList/] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1464 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebMenuList] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1464 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebMenuList.*] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1465 ] - [ INFO ]  Mapped URL path [/dispatch/websys/WebMenuList/] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1465 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpList] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1465 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpList.*] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1465 ] - [ INFO ]  Mapped URL path [/dispatch/permis/SysOpList/] onto handler 'dispatchMvc'
+2016-02-27 19:24:35  [ main:1466 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefPage] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1467 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefPage.*] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1467 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefPage/] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1467 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeList] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1467 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeList.*] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1468 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeList/] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1468 ] - [ INFO ]  Mapped URL path [/base/syscode/saveOrUpdate] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1468 ] - [ INFO ]  Mapped URL path [/base/syscode/saveOrUpdate.*] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1468 ] - [ INFO ]  Mapped URL path [/base/syscode/saveOrUpdate/] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1469 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefById] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1469 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefById.*] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1469 ] - [ INFO ]  Mapped URL path [/base/syscode/queryDefById/] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1469 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeExpList] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1470 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeExpList.*] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1470 ] - [ INFO ]  Mapped URL path [/base/syscode/queryCodeExpList/] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1470 ] - [ INFO ]  Mapped URL path [/base/syscode/querySysCodeInfo] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1470 ] - [ INFO ]  Mapped URL path [/base/syscode/querySysCodeInfo.*] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1471 ] - [ INFO ]  Mapped URL path [/base/syscode/querySysCodeInfo/] onto handler 'sysCodeMvc'
+2016-02-27 19:24:35  [ main:1471 ] - [ INFO ]  Mapped URL path [/base/sysmenu/saveOrUpdate] onto handler 'sysMenuMvc'
+2016-02-27 19:24:35  [ main:1471 ] - [ INFO ]  Mapped URL path [/base/sysmenu/saveOrUpdate.*] onto handler 'sysMenuMvc'
+2016-02-27 19:24:35  [ main:1472 ] - [ INFO ]  Mapped URL path [/base/sysmenu/saveOrUpdate/] onto handler 'sysMenuMvc'
+2016-02-27 19:24:35  [ main:1472 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuTree] onto handler 'sysMenuMvc'
+2016-02-27 19:24:35  [ main:1472 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuTree.*] onto handler 'sysMenuMvc'
+2016-02-27 19:24:35  [ main:1473 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuTree/] onto handler 'sysMenuMvc'
+2016-02-27 19:24:35  [ main:1473 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuById] onto handler 'sysMenuMvc'
+2016-02-27 19:24:35  [ main:1473 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuById.*] onto handler 'sysMenuMvc'
+2016-02-27 19:24:35  [ main:1473 ] - [ INFO ]  Mapped URL path [/base/sysmenu/querySysMenuById/] onto handler 'sysMenuMvc'
+2016-02-27 19:24:35  [ main:1474 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveOrUpdate] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1474 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveOrUpdate.*] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1475 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveOrUpdate/] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1475 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuTree] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1475 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuTree.*] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1475 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuTree/] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1476 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuById] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1476 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuById.*] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1476 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuById/] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1477 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuDropByModuId] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1477 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuDropByModuId.*] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1477 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuDropByModuId/] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1477 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuResByModuId] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1478 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuResByModuId.*] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1478 ] - [ INFO ]  Mapped URL path [/base/sysmodu/querySysModuResByModuId/] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1478 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuDrop] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1478 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuDrop.*] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1478 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuDrop/] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1479 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuRes] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1479 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuRes.*] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1479 ] - [ INFO ]  Mapped URL path [/base/sysmodu/saveSysModuRes/] onto handler 'sysModuMvc'
+2016-02-27 19:24:35  [ main:1480 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModus] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1480 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModus.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1481 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModus/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1481 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysModuTree] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1481 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysModuTree.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1481 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysModuTree/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1482 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysRolePage] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1482 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysRolePage.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1482 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/querySysRolePage/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1483 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModu] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1483 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModu.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1483 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/addRoleModu/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1484 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimit] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1484 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimit.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1484 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimit/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1484 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimits] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1485 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimits.*] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1485 ] - [ INFO ]  Mapped URL path [/permis/sysmodurole/removeLimits/] onto handler 'sysModuRoleMvc'
+2016-02-27 19:24:35  [ main:1485 ] - [ INFO ]  Mapped URL path [/permis/sysop/saveOrUpdate] onto handler 'sysOpMvc'
+2016-02-27 19:24:35  [ main:1486 ] - [ INFO ]  Mapped URL path [/permis/sysop/saveOrUpdate.*] onto handler 'sysOpMvc'
+2016-02-27 19:24:35  [ main:1486 ] - [ INFO ]  Mapped URL path [/permis/sysop/saveOrUpdate/] onto handler 'sysOpMvc'
+2016-02-27 19:24:35  [ main:1486 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpPage] onto handler 'sysOpMvc'
+2016-02-27 19:24:35  [ main:1486 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpPage.*] onto handler 'sysOpMvc'
+2016-02-27 19:24:35  [ main:1487 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpPage/] onto handler 'sysOpMvc'
+2016-02-27 19:24:35  [ main:1487 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpById] onto handler 'sysOpMvc'
+2016-02-27 19:24:35  [ main:1487 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpById.*] onto handler 'sysOpMvc'
+2016-02-27 19:24:35  [ main:1487 ] - [ INFO ]  Mapped URL path [/permis/sysop/querySysOpById/] onto handler 'sysOpMvc'
+2016-02-27 19:24:35  [ main:1488 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/addOpRoles] onto handler 'sysOpRoleMvc'
+2016-02-27 19:24:35  [ main:1488 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/addOpRoles.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:24:35  [ main:1489 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/addOpRoles/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:24:35  [ main:1489 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/setMasterRole] onto handler 'sysOpRoleMvc'
+2016-02-27 19:24:35  [ main:1489 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/setMasterRole.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:24:35  [ main:1489 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/setMasterRole/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:24:35  [ main:1489 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/removeOpRoles] onto handler 'sysOpRoleMvc'
+2016-02-27 19:24:35  [ main:1490 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/removeOpRoles.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:24:35  [ main:1490 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/removeOpRoles/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:24:35  [ main:1490 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/queryOpRolePage] onto handler 'sysOpRoleMvc'
+2016-02-27 19:24:35  [ main:1490 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/queryOpRolePage.*] onto handler 'sysOpRoleMvc'
+2016-02-27 19:24:35  [ main:1491 ] - [ INFO ]  Mapped URL path [/permis/sysoprole/queryOpRolePage/] onto handler 'sysOpRoleMvc'
+2016-02-27 19:24:35  [ main:1491 ] - [ INFO ]  Mapped URL path [/permis/sysrole/saveOrUpdate] onto handler 'sysRoleMvc'
+2016-02-27 19:24:35  [ main:1491 ] - [ INFO ]  Mapped URL path [/permis/sysrole/saveOrUpdate.*] onto handler 'sysRoleMvc'
+2016-02-27 19:24:35  [ main:1492 ] - [ INFO ]  Mapped URL path [/permis/sysrole/saveOrUpdate/] onto handler 'sysRoleMvc'
+2016-02-27 19:24:35  [ main:1492 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRoleById] onto handler 'sysRoleMvc'
+2016-02-27 19:24:35  [ main:1492 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRoleById.*] onto handler 'sysRoleMvc'
+2016-02-27 19:24:35  [ main:1493 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRoleById/] onto handler 'sysRoleMvc'
+2016-02-27 19:24:35  [ main:1493 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRolePage] onto handler 'sysRoleMvc'
+2016-02-27 19:24:35  [ main:1493 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRolePage.*] onto handler 'sysRoleMvc'
+2016-02-27 19:24:35  [ main:1493 ] - [ INFO ]  Mapped URL path [/permis/sysrole/querySysRolePage/] onto handler 'sysRoleMvc'
+2016-02-27 19:24:35  [ main:1627 ] - [ INFO ]  FrameworkServlet 'spring': initialization completed in 1063 ms
+2016-02-27 19:24:35  [ main:1656 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:16101
+2016-02-27 19:24:35  [ main:1656 ] - [ INFO ]  start server successful.
+2016-02-27 19:24:38  [ 1437393913@qtp-337297605-7:4370 ] - [ INFO ]   sys-frame refresh login ...... 
+2016-02-27 19:24:38  [ 1437393913@qtp-337297605-7:4371 ] - [ INFO ]   sys-frame refresh login successful. 
+2016-02-27 19:24:58  [ 1437393913@qtp-337297605-7:23818 ] - [ WARN ]  /paas-csys/dispatch/permis/SysOpList
+org.apache.jasper.JasperException: PWC6033: Unable to compile class for JSP
+
+PWC6199: Generated servlet error:
+Only a type can be imported. com.naomi.ebdp.sys.frame.util.RequestKey resolves to a package
+
+PWC6199: Generated servlet error:
+Only a type can be imported. com.naomi.ebdp.sys.frame.cross.bean.DropRecord resolves to a package
+
+PWC6199: Generated servlet error:
+Only a type can be imported. com.naomi.ebdp.sys.frame.cross.bean.ModuInfo resolves to a package
+
+PWC6199: Generated servlet error:
+Only a type can be imported. com.naomi.ebdp.sys.comm.model.SysModu resolves to a package
+
+PWC6199: Generated servlet error:
+Only a type can be imported. com.naomi.ebdp.sys.comm.model.SysModuRes resolves to a package
+
+PWC6197: An error occurred at line: 5 in the jsp file: /frame/jsp/dynamic.jsp
+PWC6199: Generated servlet error:
+ModuInfo cannot be resolved to a type
+
+PWC6197: An error occurred at line: 5 in the jsp file: /frame/jsp/dynamic.jsp
+PWC6199: Generated servlet error:
+ModuInfo cannot be resolved to a type
+
+PWC6197: An error occurred at line: 5 in the jsp file: /frame/jsp/dynamic.jsp
+PWC6199: Generated servlet error:
+RequestKey.DYNAMIC_MODUINFO_KEY cannot be resolved to a type
+
+PWC6197: An error occurred at line: 5 in the jsp file: /frame/jsp/dynamic.jsp
+PWC6199: Generated servlet error:
+SysModu cannot be resolved to a type
+
+PWC6197: An error occurred at line: 5 in the jsp file: /frame/jsp/dynamic.jsp
+PWC6199: Generated servlet error:
+SysModuRes cannot be resolved to a type
+
+PWC6197: An error occurred at line: 5 in the jsp file: /frame/jsp/dynamic.jsp
+PWC6199: Generated servlet error:
+DropRecord cannot be resolved to a type
+
+PWC6197: An error occurred at line: 5 in the jsp file: /frame/jsp/dynamic.jsp
+PWC6199: Generated servlet error:
+RequestKey.DYNAMIC_IGNORE_KEYS cannot be resolved to a type
+
+PWC6197: An error occurred at line: 5 in the jsp file: /frame/jsp/dynamic.jsp
+PWC6199: Generated servlet error:
+SysModuRes cannot be resolved to a type
+
+PWC6197: An error occurred at line: 5 in the jsp file: /frame/jsp/dynamic.jsp
+PWC6199: Generated servlet error:
+SysModuRes cannot be resolved to a type
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:123)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:296)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:376)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:437)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:608)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:360)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:486)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:380)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:327)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:238)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:262)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1180)
+	at com.binary.framework.spring.BinarySpringServlet.doDispatch(BinarySpringServlet.java:290)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1221)
+	at com.binary.framework.web.filter.LoginValidateFilter.doFilter(LoginValidateFilter.java:216)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+	at com.binary.framework.web.filter.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:28)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:399)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
