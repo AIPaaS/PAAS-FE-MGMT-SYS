@@ -63,10 +63,10 @@ function initComponent() {
 			var item = CU.getDropItemRecord("V_SYS_OP_LOCK_FLAG", value);
 			return item.name;
         }},
-        {header:"是否需要修改密码", width:110, align:"left", dataIndex:"isUpdatePwd",renderer:function(value, metaData, record, rowIndex, colIndex, store) {
-			var item = CU.getDropItemRecord("V_SYS_OP_IS_UPDATE_PWD", value);
-			return item.name;
-        }},
+//        {header:"是否需要修改密码", width:110, align:"left", dataIndex:"isUpdatePwd",renderer:function(value, metaData, record, rowIndex, colIndex, store) {
+//			var item = CU.getDropItemRecord("V_SYS_OP_IS_UPDATE_PWD", value);
+//			return item.name;
+//        }},
         {header:"有效状态", width:200, align:"left", dataIndex:"status",renderer:function(value, metaData, record, rowIndex, colIndex, store) {
 			var item = CU.getDropItemRecord("V_SYS_OP_STATUS", value);
 			//return item.name;
