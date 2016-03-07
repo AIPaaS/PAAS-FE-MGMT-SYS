@@ -23,6 +23,10 @@ function init() {
 	if(!CU.isEmpty(CurrentId)) {
 		queryInfo();
 	}
+	
+	/**框的校验*/
+	textarea_change();
+	textarea_add_Div();
 }
 
 /** 初始化页面、内存等基本数据 **/
@@ -80,7 +84,14 @@ function queryInfo(callback) {
 
 /** 保存 **/
 function save() {
+	//alert("保存")
 	if(!P_form.isValid()) return ;
+	
+    if(document.getElementById("x-form-el-ext-comp_110").style.display=="block"){
+    	EU.showMsg({msg:"请正确填写选项  !"});
+    	return false;
+    }	
+		
 	var bean = EU.getAllValue(p_Components);
 	if(!CU.isEmpty(CurrentId)) bean.id = CurrentId;
 	bean.roleType = RoleType;
@@ -98,6 +109,43 @@ function save() {
 function closeWin() {
 	PRQ.closeWindow();
 }
+
+/**判断文本框的值改变**/
+function textarea_change() {
+	document.getElementById("ext-comp-1007").addEventListener("change",function(event) { 
+		var html_object = document.getElementById("ext-comp-1007");
+		//alert(html_object.value.length)//400
+		var message_object = document.getElementById("x-form-el-ext-comp_110");
+		if(html_object.value.length>400){//
+			html_object.className="x-form-textarea x-form-field x-form-focus x-form-invalid";//.x-form-invalid
+			message_object.innerHTML = "输入框的值最大可输入400个字符，当前已输入"+html_object.value.length+"个字符"; 
+			message_object.style.display = "block"; 
+			return false;
+		}
+		message_object.style.display = "none";
+
+		},false);	
+}
+
+function textarea_add_Div(){
+	var father_object = document.getElementById("x-form-el-ext-comp-1007");
+	var newNode = document.createElement("div"); 
+	newNode.innerHTML = "该输入项为必输项"; 
+	newNode.style = "width: 280px; margin-left:95px; display: none;";
+	newNode.className = "x-form-invalid-msg";
+	newNode.id = "x-form-el-ext-comp_110";
+	father_object.appendChild(newNode); 
+	//father_object.insertBefore(newNode,null);
+}
+
+
+
+
+
+
+
+
+
 
 
 

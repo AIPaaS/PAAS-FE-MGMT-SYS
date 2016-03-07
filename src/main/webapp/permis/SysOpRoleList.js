@@ -139,12 +139,18 @@ function queryRole() {
 	}
 	var cdt = P_rolecdt_form.getValues();
 	cdt.roleType = 1;
+	cdt.status = 1;
 	P_rolegrid.executeQuery({opId:CurrentOpId,cSysRole:cdt});
 }
 
 
 /** 删除角色**/
 function removeRole(){
+	getCheckedId();
+	if(CU.isEmpty(RoleIdArray)){
+		EU.showMsg({msg:"请选择角色!"});
+		return ;
+	}
 	EU.RS({url:"/permis/sysoprole/removeOpRoles",ps:{opId:CurrentOpId,roleIds:RoleIdArray},cb:function(rs) {
 		queryRole();
 		EU.showMsg({msg:"删除角色成功!"});
@@ -152,6 +158,11 @@ function removeRole(){
 }
 /** 分配角色**/
 function addOpRoles(){
+	getCheckedId();
+	if(CU.isEmpty(RoleIdArray)){
+		EU.showMsg({msg:"请选择角色!"});
+		return ;
+	}
 	EU.RS({url:"/permis/sysoprole/addOpRoles",ps:{opId:CurrentOpId,roleIds:RoleIdArray},cb:function(rs) {
 		queryRole();
 		EU.showMsg({msg:"分配角色成功!"});
@@ -194,3 +205,14 @@ function clearOp() {
 function clearRole(){
 	P_rolecdt_form.reset();
 }
+function getCheckedId(){
+	
+//	var record = P_rolegrid.store.getAt(rowIndex);
+//	assign = record.get("assign");
+	RoleIdArray.splice(0,RoleIdArray.length);//清空数组 
+	var rows = Ext.getCmp('rolegrid').getSelectionModel().getSelections(); //获取所有选中行，
+	for(var i=0;i <rows.length;i++){
+		RoleIdArray[i] = rows[i].get("role.id");
+	}
+}
+

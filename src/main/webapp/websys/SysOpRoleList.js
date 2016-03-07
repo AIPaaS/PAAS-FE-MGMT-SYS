@@ -139,6 +139,7 @@ function queryRole() {
 	}
 	var cdt = P_rolecdt_form.getValues();
 	cdt.roleType = 2;
+	cdt.status = 1;
 	P_rolegrid.executeQuery({opId:CurrentOpId,cSysRole:cdt});
 }
 
