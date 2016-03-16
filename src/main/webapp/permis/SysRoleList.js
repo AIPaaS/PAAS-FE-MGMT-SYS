@@ -45,7 +45,13 @@ function initComponent() {
 	var fields = ["id","roleCode","roleName","roleType","roleDesc","status"];
 	var cm = EF.getColumnModel([new Ext.grid.RowNumberer(),
 		{header:"角色代码", width:120, align:"left", dataIndex:"roleCode",renderer:function(value, metaData, record, rowIndex, colIndex, store) {
-			return "<div><a href='###' onclick='openInfo("+record.get("id")+")' >"+value+"</a></div>";
+			var roleCode = record.get("roleCode");
+			if(roleCode == '000'){
+				return "<div><a href='###' >"+value+"</a></div>";
+			}else{
+				return "<div><a href='###' onclick='openInfo("+record.get("id")+")' >"+value+"</a></div>";
+			}
+			
         }},
 		{header:"角色名称", width:160, align:"left", dataIndex:"roleName"},
         {header:"有效状态", width:100, align:"center", dataIndex:"status",renderer:function(value, metaData, record, rowIndex, colIndex, store) {
