@@ -47,7 +47,8 @@ function initComponent() {
 	var fields = ["id","opCode","opName","opKind","mobileNo","emailAdress","loginCode","gender","officeTel","notes","lockFlag","isUpdatePwd","status"];
 	var cm = EF.getColumnModel([new Ext.grid.RowNumberer(),
 		{header:"用户编号", width:80, align:"left", dataIndex:"opCode",renderer:function(value, metaData, record, rowIndex, colIndex, store) {
-			return "<div><a href='###' onclick='openInfo("+record.get("id")+")' >"+value+"</a></div>";
+			//return "<div><a href='###' onclick='openInfo("+record.get("id")+")' >"+value+"</a></div>";
+			return value;
         }},
 		{header:"用户姓名", width:80, align:"left", dataIndex:"opName"},
 		{header:"手机号", width:120, align:"center", dataIndex:"mobileNo"},
@@ -84,8 +85,8 @@ function initComponent() {
 /** 对组件设置监听 **/
 function initListener() {
 	P_grid.on("rowdblclick", function(grid,rowIndex,e) {
-		var record = P_grid.store.getAt(rowIndex);
-		openInfo(record.get("id"));
+//		var record = P_grid.store.getAt(rowIndex);
+//		openInfo(record.get("id"));
 	});
 }
 

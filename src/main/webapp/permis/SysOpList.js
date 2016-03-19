@@ -118,9 +118,10 @@ function clear() {
 function openInfo(id){
 	var url = ContextPath + "/dispatch/permis/SysOpForm?opKind=1";
 	if(!CU.isEmpty(id)) url += "&id="+id;
-	PU.openModule({url:url,width:600,height:400,resizable:false,modal:true,callback:function() {
-		P_grid.store.reload();
-	}});
+//	PU.openModule({url:url,width:600,height:400,resizable:false,modal:true,callback:function() {
+//		P_grid.store.reload();
+//	}});
+	window.location = url;
 }
 
 

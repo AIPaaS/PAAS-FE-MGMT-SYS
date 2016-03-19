@@ -36,7 +36,7 @@ function initData() {
 /** 初始化组件 **/
 function initComponent() {
 	var B_save = EF.getButton({text:"保存",name:"btn_op_save",iconCls:"btn_save",handler:save});
-	var B_cancel = EF.getButton({text:"关闭",name:"btn_op_close",iconCls:"btn_close",handler:closeWin});
+	var B_cancel = EF.getButton({text:"返回",name:"btn_op_close",iconCls:"btn_unpassing",handler:closeWin});
 
 	var formwidth = 600;		//表单总宽度
 	var formheight = 400;		//表单总高度
@@ -59,7 +59,7 @@ function initComponent() {
 	
 	p_Components = [TF_f0,TF_f1,TF_f3,TF_f4,TF_f5,TF_f6,TF_f7,TF_f9,TF_f10,TF_f11,TF_f8];
 
-	P_form = EF.getFormPanel({tbar:["->",B_save,B_cancel],border:false,autoScroll:true,frame:false,width:formwidth,height:formheight,items:[
+	P_form = EF.getFormPanel({tbar:[B_save,B_cancel],border:false,autoScroll:true,frame:false,width:formwidth,height:formheight,items:[
 		{width:formwidth-20,border:false,bodyStyle:"padding-top:5px;",layout:"column",defaults:{layout:"form",width:stdwidth,border:false,labelWidth:labelWidth,labelAlign:"right"},items:[
 			{items:[TF_f0]},{items:[TF_f1]},{items:[TF_f3]},{items:[TF_f4]},{items:[TF_f5]},{items:[TF_f6]},
 			{items:[TF_f7]},{items:[TF_f9]},{items:[TF_f10]},{items:[TF_f11],width:stdwidth*2},{items:[TF_f8],width:stdwidth*2}
@@ -104,7 +104,9 @@ function save() {
 
 /** 关闭 **/
 function closeWin() {
-	PRQ.closeWindow();
+	//PRQ.closeWindow();
+	var url = ContextPath + "/dispatch/permis/SysOpList";
+	window.location = url;
 }
 
 

@@ -47,7 +47,7 @@ function initComponent() {
 		{header:"角色代码", width:120, align:"left", dataIndex:"roleCode",renderer:function(value, metaData, record, rowIndex, colIndex, store) {
 			var roleCode = record.get("roleCode");
 			if(roleCode == '000'){
-				return "<div><a href='###' >"+value+"</a></div>";
+				return "<div>"+value+"</a>";
 			}else{
 				return "<div><a href='###' onclick='openInfo("+record.get("id")+")' >"+value+"</a></div>";
 			}
@@ -71,7 +71,9 @@ function initComponent() {
 function initListener() {
 	P_grid.on("rowdblclick", function(grid,rowIndex,e) {
 		var record = P_grid.store.getAt(rowIndex);
-		openInfo(record.get("id"));
+		if(record.get("roleCode") != "000") {
+			openInfo(record.get("id"));
+		}
 	});
 }
 
@@ -104,9 +106,10 @@ function clear() {
 function openInfo(id){
 	var url = ContextPath + "/dispatch/permis/SysRoleForm?roleType=1";
 	if(!CU.isEmpty(id)) url += "&id="+id;
-	PU.openModule({url:url,width:600,height:400,resizable:false,modal:true,callback:function() {
-		P_grid.store.reload();
-	}});
+//	PU.openModule({url:url,width:600,height:400,resizable:false,modal:true,callback:function() {
+//		P_grid.store.reload();
+//	}});
+	window.location = url;
 }
 
 
