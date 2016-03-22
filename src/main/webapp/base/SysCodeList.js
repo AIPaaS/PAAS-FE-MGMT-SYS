@@ -133,9 +133,10 @@ function clear() {
 function openInfo(id){
 	var url = ContextPath + "/dispatch/base/SysCodeForm";
 	if(!CU.isEmpty(id)) url += "?id="+id;
-	PU.openModule({url:url,width:800,height:600,resizable:false,modal:true,callback:function() {
-		P_grid.store.reload();
-	}});
+//	PU.openModule({url:url,width:800,height:600,resizable:false,modal:true,callback:function() {
+//		P_grid.store.reload();
+//	}});
+	window.location = url;
 }
 
 
