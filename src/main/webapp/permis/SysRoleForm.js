@@ -87,6 +87,18 @@ function save() {
 	//alert("保存")
 	if(!P_form.isValid()) return ;
 	
+	
+	var v1 = document.getElementById("ext-comp-1004").value.length;
+	var v2 = document.getElementById("ext-comp-1005").value.length;
+	if(v1>40 ){
+		EU.showMsg({msg:"角色代码输入太多！（最多可输入40个字符）"});
+		return false;
+	}
+	if(v2> 40){
+		EU.showMsg({msg:"角色名称输入太多！（最多可输入40个字符）"});
+		return false;
+	}
+	
     if(document.getElementById("x-form-el-ext-comp_110").style.display=="block"){
     	EU.showMsg({msg:"请正确填写选项  !"});
     	return false;
@@ -118,6 +130,11 @@ function closeWin() {
 	window.location = url;
 }
 
+
+
+
+
+
 /**判断文本框的值改变**/
 function textarea_change() {
 	document.getElementById("ext-comp-1007").addEventListener("change",function(event) { 
@@ -138,7 +155,7 @@ function textarea_change() {
 function textarea_add_Div(){
 	var father_object = document.getElementById("x-form-el-ext-comp-1007");
 	var newNode = document.createElement("div"); 
-	newNode.innerHTML = "该输入项为必输项"; 
+	newNode.innerHTML = " "; 
 	newNode.style = "width: 280px; margin-left:95px; display: none;";
 	newNode.className = "x-form-invalid-msg";
 	newNode.id = "x-form-el-ext-comp_110";
